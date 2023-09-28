@@ -7,4 +7,6 @@ Nicole Kinsella
 
 Connor Nagle
 
+Hairum Qureshi
+
 Members: Ashanti :3
