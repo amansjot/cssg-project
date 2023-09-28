@@ -8,3 +8,5 @@ Nicole Kinsella
 Connor Nagle
 
 Ashanti Craig
+
+Hairum Qureshi
