@@ -12,7 +12,7 @@ import {
   InputGroup,
   InputRightElement,
 } from "@chakra-ui/react";
-import { ColorModeSwitcher } from "./ColorModeSwitcher";
+// import { ColorModeSwitcher } from "./ColorModeSwitcher";
 import { Search2Icon } from "@chakra-ui/icons";
 // import { Logo } from "./Logo";
 
