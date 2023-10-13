@@ -1,23 +1,15 @@
 import * as React from "react";
 import {
   ChakraProvider,
-  Box,
-  VStack,
-  Grid,
   theme,
   Heading,
   Image,
   Flex,
   HStack,
-  Text,
   Avatar,
   Container,
-  Spacer,
-  Stack,
-  Center,
   Input,
   InputGroup,
-  InputRightAddon,
   InputRightElement,
 } from "@chakra-ui/react";
 import { ColorModeSwitcher } from "./ColorModeSwitcher";
