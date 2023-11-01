@@ -9,8 +9,7 @@ import {
   Avatar,
   Container,
   Input,
-  InputGroup,
-  InputRightElement,
+  IconButton,
 } from "@chakra-ui/react";
 // import { ColorModeSwitcher } from "./ColorModeSwitcher";
 import { Search2Icon } from "@chakra-ui/icons";
@@ -34,13 +33,27 @@ export const App = () => (
         <Heading size="md">UD Buy & Sell</Heading>
       </HStack>
       <Flex>
-        <Avatar
-          name="Dan Abrahmov"
+        <IconButton
+          bg="white"
           border="1px solid black"
-          src="https://bit.ly/dan-abramov"
+          borderRadius="50%"
+          ml="-1px"
+          h="50px"
+          w="50px"
+          aria-label="Search catalog"
+          icon={
+            <Avatar
+              name="Dan Abrahmov"
+              src="https://bit.ly/dan-abramov"
+            />
+          }
+          _hover={{
+            bg: "#EFEFEF",
+          }}
         />
       </Flex>
     </HStack>
+
     <Container
       mt="90px"
       maxW="100%"
@@ -49,21 +62,47 @@ export const App = () => (
       backgroundColor="white"
     >
       <Container maxW="100%" mb="10">
+        <Image
+          src="logo-color.svg"
+          w="100px"
+          h="100px"
+          m="0 auto"
+          alt="CS+SG logo"
+        />
         <Heading mb="2" fontSize="5xl">
           UD Buy & Sell
         </Heading>
-        <Heading size="md" color="grey">by CS for Social Good</Heading>
+        <Heading size="md" color="grey">
+          by CS for Social Good
+        </Heading>
       </Container>
 
       <Container maxW="100%">
-        <InputGroup w="50%" margin="0 auto">
+        <HStack w="100%" maxW="500px" margin="0 auto" spacing="0">
           <Input
             size="lg"
+            height="50px"
             borderColor="grey"
-            placeholder="What would you like to buy/sell?"
+            borderRadius="7px 0 0 7px"
+            placeholder="What would you like to find?"
+            _hover={{
+              borderColor: "grey",
+            }}
           />
-          <InputRightElement mt="1" mr="1" children={<Search2Icon />} />
-        </InputGroup>
+          <IconButton
+            borderRadius="0 7px 7px 0"
+            bg="white"
+            border="1px solid grey"
+            ml="-1px"
+            h="50px"
+            w="50px"
+            aria-label="Search catalog"
+            icon={<Search2Icon />}
+            _hover={{
+              bg: "#EFEFEF",
+            }}
+          />
+        </HStack>
       </Container>
     </Container>
   </ChakraProvider>
