@@ -3,7 +3,7 @@
 > react-scripts test --coverage
 
 FAIL src/App.test.tsx
-  ✕ renders learn react link (351 ms)
+  ✕ renders learn react link (268 ms)
 
   ● renders learn react link
 
@@ -34,17 +34,25 @@ FAIL src/App.test.tsx
           [36m<div[39m
             [33mclass[39m=[32m"css-k008qs"[39m
           [36m>[39m
-            [36m<span[39m
-              [33mclass[39m=[32m"chakra-avatar css-16bdg75"[39m
+            [36m<button[39m
+              [33maria-label[39m=[32m"Search catalog"[39m
+              [33mclass[39m=[32m"chakra-button css-1fevlsx"[39m
+              [33mtype[39m=[32m"button"[39m
             [36m>[39m
-              [36m<div[39m
-                [33maria-label[39m=[32m"Dan Abrahmov"[39m
-                [33mclass[39m=[32m"chakra-avatar__initials css-1ebyn6"[39m
-                [33mrole[39m=[32m"img"[39m
+              [36m<span[39m
+                [33maria-hidden[39m=[32m"true"[39m
+                [33mclass[39m=[32m"chakra-avatar css-o9ybyr"[39m
+                [33mfocusable[39m=[32m"false"[39m
               [36m>[39m
-                [0mDA[0m
-              [36m</div>[39m
-            [36m</span>[39m
+                [36m<div[39m
+                  [33maria-label[39m=[32m"Dan Abrahmov"[39m
+                  [33mclass[39m=[32m"chakra-avatar__initials css-1ebyn6"[39m
+                  [33mrole[39m=[32m"img"[39m
+                [36m>[39m
+                  [0mDA[0m
+                [36m</div>[39m
+              [36m</span>[39m
+            [36m</button>[39m
           [36m</div>[39m
         [36m</nav>[39m
         [36m<div[39m
@@ -53,6 +61,11 @@ FAIL src/App.test.tsx
           [36m<div[39m
             [33mclass[39m=[32m"chakra-container css-ugpui4"[39m
           [36m>[39m
+            [36m<img[39m
+              [33malt[39m=[32m"CS+SG logo"[39m
+              [33mclass[39m=[32m"chakra-image css-6evhbc"[39m
+              [33msrc[39m=[32m"logo-color.svg"[39m
+            [36m/>[39m
             [36m<h2[39m
               [33mclass[39m=[32m"chakra-heading css-13yglpk"[39m
             [36m>[39m
@@ -68,17 +81,19 @@ FAIL src/App.test.tsx
             [33mclass[39m=[32m"chakra-container css-z1tyh0"[39m
           [36m>[39m
             [36m<div[39m
-              [33mclass[39m=[32m"chakra-input__group css-me6fhq"[39m
-              [33mdata-group[39m=[32m"true"[39m
+              [33mclass[39m=[32m"chakra-stack css-1htq713"[39m
             [36m>[39m
               [36m<input[39m
-                [33mclass[39m=[32m"chakra-input css-zwaq5f"[39m
-                [33mplaceholder[39m=[32m"What would you like to buy/sell?"[39m
+                [33mclass[39m=[32m"chakra-input css-1ih4id"[39m
+                [33mplaceholder[39m=[32m"What would you like to find?"[39m
               [36m/>[39m
-              [36m<div[39m
-                [33mclass[39m=[32m"chakra-input__right-element css-u242gm"[39m
+              [36m<button[39m
+                [33maria-label[39m=[32m"Search catalog"[39m
+                [33mclass[39m=[32m"chakra-button css-10g30tk"[39m
+                [33mtype[39m=[32m"button"[39m
               [36m>[39m
                 [36m<svg[39m
+                  [33maria-hidden[39m=[32m"true"[39m
                   [33mclass[39m=[32m"chakra-icon css-onkibi"[39m
                   [33mfocusable[39m=[32m"false"[39m
                   [33mviewBox[39m=[32m"0 0 24 24"[39m
@@ -88,7 +103,7 @@ FAIL src/App.test.tsx
                     [33mfill[39m=[32m"currentColor"[39m
                   [36m/>[39m
                 [36m</svg>[39m
-              [36m</div>[39m
+              [36m</button>[39m
             [36m</div>[39m
           [36m</div>[39m
         [36m</div>[39m
@@ -228,7 +243,7 @@ All files              |    8.57 |        0 |   13.04 |    8.69 |
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        2.991 s
+Time:        2.905 s
 Ran all test suites.
 [0;33mOne of your dependencies, babel-preset-react-app, is importing the
 "@babel/plugin-proposal-private-property-in-object" package without
