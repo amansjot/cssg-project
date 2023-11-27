@@ -3,7 +3,7 @@
 > react-scripts test --coverage
 
 FAIL src/App.test.tsx
-  ✕ renders learn react link (272 ms)
+  ✕ renders learn react link (278 ms)
 
   ● renders learn react link
 
@@ -15,24 +15,62 @@ FAIL src/App.test.tsx
     [36m>[39m
       [36m<div>[39m
         [36m<nav[39m
-          [33mclass[39m=[32m"chakra-stack css-1s53jf9"[39m
+          [33mclass[39m=[32m"chakra-stack css-gyt6mg"[39m
         [36m>[39m
           [36m<div[39m
-            [33mclass[39m=[32m"chakra-stack css-1igwmid"[39m
+            [33mclass[39m=[32m"chakra-stack css-12vdasz"[39m
           [36m>[39m
-            [36m<img[39m
-              [33malt[39m=[32m"CS+SG logo"[39m
-              [33mclass[39m=[32m"chakra-image css-sk9oah"[39m
-              [33msrc[39m=[32m"logo-color.svg"[39m
-            [36m/>[39m
-            [36m<h2[39m
-              [33mclass[39m=[32m"chakra-heading css-18j379d"[39m
+            [36m<a[39m
+              [33mclass[39m=[32m"chakra-link css-spn4bz"[39m
+              [33mhref[39m=[32m"/"[39m
             [36m>[39m
-              [0mUD Buy & Sell[0m
-            [36m</h2>[39m
+              [36m<img[39m
+                [33malt[39m=[32m"CS+SG logo"[39m
+                [33mclass[39m=[32m"chakra-image css-sk9oah"[39m
+                [33msrc[39m=[32m"logo-color.svg"[39m
+              [36m/>[39m
+            [36m</a>[39m
+            [36m<a[39m
+              [33mclass[39m=[32m"chakra-link css-spn4bz"[39m
+              [33mhref[39m=[32m"/"[39m
+            [36m>[39m
+              [36m<h2[39m
+                [33mclass[39m=[32m"chakra-heading css-18j379d"[39m
+              [36m>[39m
+                [0mUD Buy & Sell[0m
+              [36m</h2>[39m
+            [36m</a>[39m
           [36m</div>[39m
           [36m<div[39m
-            [33mclass[39m=[32m"css-k008qs"[39m
+            [33mclass[39m=[32m"chakra-stack css-lgvjn3"[39m
+          [36m>[39m
+            [36m<a[39m
+              [33mclass[39m=[32m"chakra-link css-f8hxss"[39m
+              [33mhref[39m=[32m"/categories"[39m
+            [36m>[39m
+              [0mCategories[0m
+            [36m</a>[39m
+            [36m<a[39m
+              [33mclass[39m=[32m"chakra-link css-f8hxss"[39m
+              [33mhref[39m=[32m"/listings"[39m
+            [36m>[39m
+              [0mListings[0m
+            [36m</a>[39m
+            [36m<a[39m
+              [33mclass[39m=[32m"chakra-link css-f8hxss"[39m
+              [33mhref[39m=[32m"/sell"[39m
+            [36m>[39m
+              [0mSell an Item[0m
+            [36m</a>[39m
+            [36m<a[39m
+              [33mclass[39m=[32m"chakra-link css-f8hxss"[39m
+              [33mhref[39m=[32m"/messages"[39m
+            [36m>[39m
+              [0mMessages[0m
+            [36m</a>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"css-hfuuju"[39m
           [36m>[39m
             [36m<button[39m
               [33maria-label[39m=[32m"Search catalog"[39m
@@ -41,15 +79,15 @@ FAIL src/App.test.tsx
             [36m>[39m
               [36m<span[39m
                 [33maria-hidden[39m=[32m"true"[39m
-                [33mclass[39m=[32m"chakra-avatar css-o9ybyr"[39m
+                [33mclass[39m=[32m"chakra-avatar css-1ltzpra"[39m
                 [33mfocusable[39m=[32m"false"[39m
               [36m>[39m
                 [36m<div[39m
-                  [33maria-label[39m=[32m"Dan Abrahmov"[39m
+                  [33maria-label[39m=[32m"User"[39m
                   [33mclass[39m=[32m"chakra-avatar__initials css-1ebyn6"[39m
                   [33mrole[39m=[32m"img"[39m
                 [36m>[39m
-                  [0mDA[0m
+                  [0mU[0m
                 [36m</div>[39m
               [36m</span>[39m
             [36m</button>[39m
@@ -322,5 +360,5 @@ All files              |    8.57 |        0 |   13.04 |    8.69 |
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        3.362 s
+Time:        3.536 s
 Ran all test suites.
