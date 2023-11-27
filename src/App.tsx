@@ -11,6 +11,15 @@ import {
   Input,
   IconButton,
   Link,
+  Text,
+  Button,
+  ButtonGroup,
+  Card,
+  CardBody,
+  CardFooter,
+  Center,
+  Divider,
+  Stack,
 } from "@chakra-ui/react";
 // import { ColorModeSwitcher } from "./ColorModeSwitcher";
 import { Search2Icon } from "@chakra-ui/icons";
