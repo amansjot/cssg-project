@@ -11,6 +11,15 @@ import {
   Input,
   IconButton,
   Link,
+  Text,
+  Button,
+  ButtonGroup,
+  Card,
+  CardBody,
+  CardFooter,
+  Center,
+  Divider,
+  Stack,
 } from "@chakra-ui/react";
 // import { ColorModeSwitcher } from "./ColorModeSwitcher";
 import { Search2Icon } from "@chakra-ui/icons";
@@ -31,10 +40,19 @@ export const App = () => (
       borderBottom="1px solid black"
     >
       <HStack position="absolute" left="20px">
-        <Image src="logo-color.svg" w="50px" alt="CS+SG logo" mr="2" />
-        <Heading size="md">UD Buy & Sell</Heading>
+        <Link href="/">
+          <Image src="logo-color.svg" w="50px" alt="CS+SG logo" mr="2" />
+        </Link>
+        <Link href="/">
+          <Heading size="md">UD Buy & Sell</Heading>
+        </Link>
       </HStack>
-      <HStack fontWeight="bold" spacing="70px" justifyContent="center" width="full">
+      <HStack
+        fontWeight="bold"
+        spacing="70px"
+        justifyContent="center"
+        width="full"
+      >
         <Link
           href="/categories"
           borderBottom="2px solid transparent"
@@ -48,7 +66,7 @@ export const App = () => (
           Categories
         </Link>
         <Link
-          href="/categories"
+          href="/listings"
           borderBottom="2px solid transparent"
           pb="4px"
           fontSize="20px"
@@ -60,7 +78,7 @@ export const App = () => (
           Listings
         </Link>
         <Link
-          href="/categories"
+          href="/sell"
           borderBottom="2px solid transparent"
           pb="4px"
           fontSize="20px"
@@ -72,7 +90,7 @@ export const App = () => (
           Sell an Item
         </Link>
         <Link
-          href="/categories"
+          href="/messages"
           borderBottom="2px solid transparent"
           pb="4px"
           fontSize="20px"
