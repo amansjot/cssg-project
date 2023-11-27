@@ -1,4 +1,4 @@
-import * as React from "react";
+// import * as React from "react";
 import {
   ChakraProvider,
   theme,
@@ -10,15 +10,7 @@ import {
   Container,
   Input,
   IconButton,
-  Button,
-  Text,
-  ButtonGroup,
-  Card,
-  CardBody,
-  CardFooter,
-  Divider,
-  Stack,
-  Center,
+  Link,
 } from "@chakra-ui/react";
 // import { ColorModeSwitcher } from "./ColorModeSwitcher";
 import { Search2Icon } from "@chakra-ui/icons";
@@ -30,18 +22,69 @@ export const App = () => (
       as={"nav"}
       position="fixed"
       top="0"
-      justify="space-between"
-      backgroundColor="lightblue"
-      width="100%"
+      justify="center"
+      backgroundColor="#00539f"
+      color="white"
+      width="full"
       padding="20px 30px"
       height="90px"
       borderBottom="1px solid black"
     >
-      <HStack>
+      <HStack position="absolute" left="20px">
         <Image src="logo-color.svg" w="50px" alt="CS+SG logo" mr="2" />
         <Heading size="md">UD Buy & Sell</Heading>
       </HStack>
-      <Flex>
+      <HStack fontWeight="bold" spacing="70px" justifyContent="center" width="full">
+        <Link
+          href="/categories"
+          borderBottom="2px solid transparent"
+          pb="4px"
+          fontSize="20px"
+          mb="-4px"
+          _hover={{
+            borderBottom: "2px solid white",
+          }}
+        >
+          Categories
+        </Link>
+        <Link
+          href="/categories"
+          borderBottom="2px solid transparent"
+          pb="4px"
+          fontSize="20px"
+          mb="-4px"
+          _hover={{
+            borderBottom: "2px solid white",
+          }}
+        >
+          Listings
+        </Link>
+        <Link
+          href="/categories"
+          borderBottom="2px solid transparent"
+          pb="4px"
+          fontSize="20px"
+          mb="-4px"
+          _hover={{
+            borderBottom: "2px solid white",
+          }}
+        >
+          Sell an Item
+        </Link>
+        <Link
+          href="/categories"
+          borderBottom="2px solid transparent"
+          pb="4px"
+          fontSize="20px"
+          mb="-4px"
+          _hover={{
+            borderBottom: "2px solid white",
+          }}
+        >
+          Messages
+        </Link>
+      </HStack>
+      <Flex position="absolute" right="20px">
         <IconButton
           bg="white"
           border="1px solid black"
@@ -50,7 +93,7 @@ export const App = () => (
           h="50px"
           w="50px"
           aria-label="Search catalog"
-          icon={<Avatar name="Dan Abrahmov" src="https://bit.ly/dan-abramov" />}
+          icon={<Avatar name="User" src="https://i.imgur.com/AtqnU7W.png" />}
           _hover={{
             bg: "#EFEFEF",
           }}
