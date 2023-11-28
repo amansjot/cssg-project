@@ -26,7 +26,7 @@ import { Search2Icon } from "@chakra-ui/icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faCartShopping } from "@fortawesome/free-solid-svg-icons";
 
-function App() {
+export const App = () => {
   const [searchQuery, setSearchQuery] = useState<string>("");
 
   const handleSearchQueryChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -271,5 +271,3 @@ function App() {
     </ChakraProvider>
   );
 };
-
-export default App;
