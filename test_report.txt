@@ -3,7 +3,7 @@
 > react-scripts test --coverage
 
 FAIL src/App.test.tsx
-  ✕ renders learn react link (278 ms)
+  ✕ renders learn react link (326 ms)
 
   ● renders learn react link
 
@@ -15,7 +15,7 @@ FAIL src/App.test.tsx
     [36m>[39m
       [36m<div>[39m
         [36m<nav[39m
-          [33mclass[39m=[32m"chakra-stack css-gyt6mg"[39m
+          [33mclass[39m=[32m"chakra-stack css-yebkzq"[39m
         [36m>[39m
           [36m<div[39m
             [33mclass[39m=[32m"chakra-stack css-12vdasz"[39m
@@ -31,11 +31,10 @@ FAIL src/App.test.tsx
               [36m/>[39m
             [36m</a>[39m
             [36m<a[39m
-              [33mclass[39m=[32m"chakra-link css-spn4bz"[39m
               [33mhref[39m=[32m"/"[39m
             [36m>[39m
               [36m<h2[39m
-                [33mclass[39m=[32m"chakra-heading css-18j379d"[39m
+                [33mclass[39m=[32m"chakra-heading css-17sgvs9"[39m
               [36m>[39m
                 [0mUD Buy & Sell[0m
               [36m</h2>[39m
@@ -45,25 +44,25 @@ FAIL src/App.test.tsx
             [33mclass[39m=[32m"chakra-stack css-lgvjn3"[39m
           [36m>[39m
             [36m<a[39m
-              [33mclass[39m=[32m"chakra-link css-f8hxss"[39m
+              [33mclass[39m=[32m"chakra-link css-c9et93"[39m
               [33mhref[39m=[32m"/categories"[39m
             [36m>[39m
               [0mCategories[0m
             [36m</a>[39m
             [36m<a[39m
-              [33mclass[39m=[32m"chakra-link css-f8hxss"[39m
+              [33mclass[39m=[32m"chakra-link css-c9et93"[39m
               [33mhref[39m=[32m"/listings"[39m
             [36m>[39m
               [0mListings[0m
             [36m</a>[39m
             [36m<a[39m
-              [33mclass[39m=[32m"chakra-link css-f8hxss"[39m
+              [33mclass[39m=[32m"chakra-link css-c9et93"[39m
               [33mhref[39m=[32m"/sell"[39m
             [36m>[39m
               [0mSell an Item[0m
             [36m</a>[39m
             [36m<a[39m
-              [33mclass[39m=[32m"chakra-link css-f8hxss"[39m
+              [33mclass[39m=[32m"chakra-link css-c9et93"[39m
               [33mhref[39m=[32m"/messages"[39m
             [36m>[39m
               [0mMessages[0m
@@ -74,22 +73,49 @@ FAIL src/App.test.tsx
           [36m>[39m
             [36m<button[39m
               [33maria-label[39m=[32m"Search catalog"[39m
-              [33mclass[39m=[32m"chakra-button css-1fevlsx"[39m
+              [33mclass[39m=[32m"chakra-button css-1jlmy26"[39m
               [33mtype[39m=[32m"button"[39m
             [36m>[39m
-              [36m<span[39m
+              [36m<svg[39m
                 [33maria-hidden[39m=[32m"true"[39m
-                [33mclass[39m=[32m"chakra-avatar css-1ltzpra"[39m
+                [33mclass[39m=[32m"svg-inline--fa fa-cart-shopping "[39m
+                [33mcolor[39m=[32m"white"[39m
+                [33mdata-icon[39m=[32m"cart-shopping"[39m
+                [33mdata-prefix[39m=[32m"fas"[39m
                 [33mfocusable[39m=[32m"false"[39m
+                [33mfont-size[39m=[32m"22px"[39m
+                [33mrole[39m=[32m"img"[39m
+                [33mviewBox[39m=[32m"0 0 576 512"[39m
+                [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
               [36m>[39m
-                [36m<div[39m
-                  [33maria-label[39m=[32m"User"[39m
-                  [33mclass[39m=[32m"chakra-avatar__initials css-1ebyn6"[39m
-                  [33mrole[39m=[32m"img"[39m
-                [36m>[39m
-                  [0mU[0m
-                [36m</div>[39m
-              [36m</span>[39m
+                [36m<path[39m
+                  [33md[39m=[32m"M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"[39m
+                  [33mfill[39m=[32m"currentColor"[39m
+                [36m/>[39m
+              [36m</svg>[39m
+            [36m</button>[39m
+            [36m<button[39m
+              [33maria-label[39m=[32m"Search catalog"[39m
+              [33mclass[39m=[32m"chakra-button css-1jlmy26"[39m
+              [33mtype[39m=[32m"button"[39m
+            [36m>[39m
+              [36m<svg[39m
+                [33maria-hidden[39m=[32m"true"[39m
+                [33mclass[39m=[32m"svg-inline--fa fa-user "[39m
+                [33mcolor[39m=[32m"white"[39m
+                [33mdata-icon[39m=[32m"user"[39m
+                [33mdata-prefix[39m=[32m"fas"[39m
+                [33mfocusable[39m=[32m"false"[39m
+                [33mfont-size[39m=[32m"22px"[39m
+                [33mrole[39m=[32m"img"[39m
+                [33mviewBox[39m=[32m"0 0 448 512"[39m
+                [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+              [36m>[39m
+                [36m<path[39m
+                  [33md[39m=[32m"M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"[39m
+                  [33mfill[39m=[32m"currentColor"[39m
+                [36m/>[39m
+              [36m</svg>[39m
             [36m</button>[39m
           [36m</div>[39m
         [36m</nav>[39m
@@ -122,12 +148,12 @@ FAIL src/App.test.tsx
               [33mclass[39m=[32m"chakra-stack css-1htq713"[39m
             [36m>[39m
               [36m<input[39m
-                [33mclass[39m=[32m"chakra-input css-1ih4id"[39m
+                [33mclass[39m=[32m"chakra-input css-1lxjy6s"[39m
                 [33mplaceholder[39m=[32m"What would you like to find?"[39m
               [36m/>[39m
               [36m<button[39m
                 [33maria-label[39m=[32m"Search catalog"[39m
-                [33mclass[39m=[32m"chakra-button css-10g30tk"[39m
+                [33mclass[39m=[32m"chakra-button css-2alucb"[39m
                 [33mtype[39m=[32m"button"[39m
               [36m>[39m
                 [36m<svg[39m
@@ -145,175 +171,17 @@ FAIL src/App.test.tsx
             [36m</div>[39m
           [36m</div>[39m
         [36m</div>[39m
+        [36m<br />[39m
+        [36m<hr[39m
+          [33maria-orientation[39m=[32m"horizontal"[39m
+          [33mclass[39m=[32m"chakra-divider css-svjswr"[39m
+        [36m/>[39m
         [36m<div[39m
-          [33mclass[39m=[32m"css-gmuwbf"[39m
+          [33mclass[39m=[32m"chakra-stack css-fso10y"[39m
         [36m>[39m
-          [36m<div[39m
-            [33mclass[39m=[32m"chakra-card css-qa3xf5"[39m
-          [36m>[39m
-            [36m<div[39m
-              [33mclass[39m=[32m"chakra-card__body css-1idwstw"[39m
-            [36m>[39m
-              [36m<img[39m
-                [33malt[39m=[32m"Green double couch with wooden legs"[39m
-                [33mclass[39m=[32m"chakra-image css-11jlpvc"[39m
-                [33msrc[39m=[32m"https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"[39m
-              [36m/>[39m
-              [36m<div[39m
-                [33mclass[39m=[32m"chakra-stack css-1gottk"[39m
-              [36m>[39m
-                [36m<h2[39m
-                  [33mclass[39m=[32m"chakra-heading css-18j379d"[39m
-                [36m>[39m
-                  [0mLiving room Chair[0m
-                [36m</h2>[39m
-                [36m<p[39m
-                  [33mclass[39m=[32m"chakra-text css-6xix1i"[39m
-                [36m>[39m
-                  [0mFREE SHIPPING[0m
-                [36m</p>[39m
-                [36m<p[39m
-                  [33mclass[39m=[32m"chakra-text css-0"[39m
-                [36m>[39m
-                  [0mThis sofa is perfect for modern tropical spaces, baroque inspired spaces, earthy toned spaces and for people who love a chic design with a sprinkle of vintage design.[0m
-                [36m</p>[39m
-                [36m<p[39m
-                  [33mclass[39m=[32m"chakra-text css-nbdq8z"[39m
-                [36m>[39m
-                  [0m$5[0m
-                [36m</p>[39m
-              [36m</div>[39m
-            [36m</div>[39m
-            [36m<hr[39m
-              [33maria-orientation[39m=[32m"horizontal"[39m
-              [33mclass[39m=[32m"chakra-divider css-svjswr"[39m
-            [36m/>[39m
-            [36m<div[39m
-              [33mclass[39m=[32m"chakra-card__footer css-1a7q9t8"[39m
-            [36m>[39m
-              [36m<div[39m
-                [33mclass[39m=[32m"chakra-button__group css-18heqsi"[39m
-                [33mdata-orientation[39m=[32m"horizontal"[39m
-                [33mrole[39m=[32m"group"[39m
-              [36m>[39m
-                [36m<button[39m
-                  [33mclass[39m=[32m"chakra-button css-1tduvxh"[39m
-                  [33mtype[39m=[32m"button"[39m
-                [36m>[39m
-                  [0mBuy now[0m
-                [36m</button>[39m
-                [36m<button[39m
-                  [33mclass[39m=[32m"chakra-button css-19nb8tt"[39m
-                  [33mtype[39m=[32m"button"[39m
-                [36m>[39m
-                  [0mAdd to cart[0m
-                [36m</button>[39m
-              [36m</div>[39m
-            [36m</div>[39m
-          [36m</div>[39m
-        [36m</div>[39m
-        [36m<span[39m
-          [33mhidden[39m=[32m""[39m
-          [33mid[39m=[32m"__chakra_env"[39m
-        [36m/>[39m
-        [36m<span[39m
-          [33mhidden[39m=[32m""[39m
-          [33mid[39m=[32m"__chakra_env"[39m
-        [36m/>[39m
-      [36m</div>[39m
-      [36m<div[39m
-        [33mclass[39m=[32m"chakra-portal"[39m
-      [36m>[39m
-        [36m<div[39m
-          [33maria-label[39m=[32m"Notifications"[39m
-          [33maria-live[39m=[32m"polite"[39m
-          [33mid[39m=[32m"chakra-toast-manager-top"[39m
-          [33mrole[39m=[32m"region"[39m
-          [33mstyle[39m=[32m"position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column; margin: 0px auto;"[39m
-        [36m/>[39m
-        [36m<div[39m
-          [33maria-label[39m=[32m"Notifications"[39m
-          [33maria-live[39m=[32m"polite"[39m
-          [33mid[39m=[32m"chakra-toast-manager-top-left"[39m
-          [33mrole[39m=[32m"region"[39m
-          [33mstyle[39m=[32m"position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column;"[39m
-        [36m/>[39m
-        [36m<div[39m
-          [33maria-label[39m=[32m"Notifications"[39m
-          [33maria-live[39m=[32m"polite"[39m
-          [33mid[39m=[32m"chakra-toast-manager-top-right"[39m
-          [33mrole[39m=[32m"region"[39m
-          [33mstyle[39m=[32m"position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column;"[39m
-        [36m/>[39m
-        [36m<div[39m
-          [33maria-label[39m=[32m"Notifications"[39m
-          [33maria-live[39m=[32m"polite"[39m
-          [33mid[39m=[32m"chakra-toast-manager-bottom-left"[39m
-          [33mrole[39m=[32m"region"[39m
-          [33mstyle[39m=[32m"position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column;"[39m
-        [36m/>[39m
-        [36m<div[39m
-          [33maria-label[39m=[32m"Notifications"[39m
-          [33maria-live[39m=[32m"polite"[39m
-          [33mid[39m=[32m"chakra-toast-manager-bottom"[39m
-          [33mrole[39m=[32m"region"[39m
-          [33mstyle[39m=[32m"position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column; margin: 0px auto;"[39m
-        [36m/>[39m
-        [36m<div[39m
-          [33maria-label[39m=[32m"Notifications"[39m
-          [33maria-live[39m=[32m"polite"[39m
-          [33mid[39m=[32m"chakra-toast-manager-bottom-right"[39m
-          [33mrole[39m=[32m"region"[39m
-          [33mstyle[39m=[32m"position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column;"[39m
-        [36m/>[39m
-      [36m</div>[39m
-      [36m<div[39m
-        [33mclass[39m=[32m"chakra-portal"[39m
-      [36m>[39m
-        [36m<div[39m
-          [33maria-label[39m=[32m"Notifications"[39m
-          [33maria-live[39m=[32m"polite"[39m
-          [33mid[39m=[32m"chakra-toast-manager-top"[39m
-          [33mrole[39m=[32m"region"[39m
-          [33mstyle[39m=[32m"position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column; margin: 0px auto;"[39m
-        [36m/>[39m
-        [36m<div[39m
-          [33maria-label[39m=[32m"Notifications"[39m
-          [33maria-live[39m=[32m"polite"[39m
-          [33mid[39m=[32m"chakra-toast-manager-top-left"[39m
-          [33mrole[39m=[32m"region"[39m
-          [33mstyle[39m=[32m"position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column;"[39m
-        [36m/>[39m
-        [36m<div[39m
-          [33maria-label[39m=[32m"Notifications"[39m
-          [33maria-live[39m=[32m"polite"[39m
-          [33mid[39m=[32m"chakra-toast-manager-top-right"[39m
-          [33mrole[39m=[32m"region"[39m
-          [33mstyle[39m=[32m"position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column;"[39m
-        [36m/>[39m
-        [36m<div[39m
-          [33maria-label[39m=[32m"Notifications"[39m
-          [33maria-live[39m=[32m"polite"[39m
-          [33mid[39m=[32m"chakra-toast-manager-bottom-left"[39m
-          [33mrole[39m=[32m"region"[39m
-          [33mstyle[39m=[32m"position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column;"[39m
-        [36m/>[39m
-        [36m<div[39m
-          [33maria-label[39m=[32m"Notifications"[39m
-          [33maria-live[39m=[32m"polite"[39m
-          [33mid[39m=[32m"chakra-toast-manager-bottom"[39m
-          [33mrole[39m=[32m"region"[39m
-          [33mstyle[39m=[32m"position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column; margin: 0px auto;"[39m
-        [36m/>[39m
-        [36m<div[39m
-          [33maria-label[39m=[32m"Notifications"[39m
-          [33maria-live[39m=[32m"polite"[39m
-          [33mid[39m=[32m"chakra-toast-manager-bottom-right"[39m
-          [33mrole[39m=[32m"region"[39m
-          [33mstyle[39m=[32m"position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column;"[39m
-        [36m/>[39m
-      [36m</div>[39m
-    [36m</body>[39m
+          [36m<br />[39m
+          [36m<br />[39m
+         ...
 
        6 | test("renders learn react link", () => {
        7 |   render(<App />)
@@ -348,8 +216,8 @@ go away.[0m
 -----------------------|---------|----------|---------|---------|-------------------
 File                   | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 -----------------------|---------|----------|---------|---------|-------------------
-All files              |    8.57 |        0 |   13.04 |    8.69 |                   
- App.tsx               |     100 |      100 |     100 |     100 |                   
+All files              |   10.66 |        0 |   11.53 |   10.81 |                   
+ App.tsx               |   57.14 |      100 |      25 |   57.14 | 33-37,207         
  ColorModeSwitcher.tsx |       0 |      100 |       0 |       0 | 12-17             
  Logo.tsx              |       0 |        0 |       0 |       0 | 11-23             
  index.tsx             |       0 |        0 |     100 |       0 | 9-28              
@@ -360,5 +228,5 @@ All files              |    8.57 |        0 |   13.04 |    8.69 |
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        3.536 s
+Time:        3.669 s
 Ran all test suites.
