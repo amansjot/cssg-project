@@ -10,18 +10,19 @@ export const ChatBot = () => {
         bottom="30px"
         right="30px"
         maxWidth="150px"
-        backgroundColor="#00539f"
+        backgroundColor="brand.blue"
         padding="25px"
         fontSize="20px"
         color="white"
         zIndex="9999"
         borderRadius="30px"
+        border="1px solid white"
         _hover={{
-          opacity: "0.8",
+          backgroundColor: "blue.600",
           transition: "0.3s ease",
         }}
       >
-        <b>Chat</b>&nbsp;&nbsp;&nbsp;<FontAwesomeIcon fontSize="22px" color="white" icon={faMessage} />
+        <b>Chat</b>&nbsp;&nbsp;<FontAwesomeIcon fontSize="18px" color="white" icon={faMessage} />
       </Button>
   );
 };
