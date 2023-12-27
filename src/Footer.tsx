@@ -1,16 +1,8 @@
 import * as React from "react";
-import { Link } from "react-router-dom";
 import {
-  Flex,
-  Heading,
-  Image,
   HStack,
-  IconButton,
   Text,
 } from "@chakra-ui/react";
-import { faCartShopping, faUser } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { ColorModeSwitcher } from "./ColorModeSwitcher";
 
 export const Footer = () => {
   return (
