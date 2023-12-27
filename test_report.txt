@@ -3,7 +3,7 @@
 > react-scripts test --coverage
 
 FAIL src/App.test.tsx
-  ✕ renders learn react link (290 ms)
+  ✕ renders learn react link (310 ms)
 
   ● renders learn react link
 
@@ -14,82 +14,92 @@ FAIL src/App.test.tsx
       [33mclass[39m=[32m"chakra-ui-light"[39m
     [36m>[39m
       [36m<div>[39m
-        [36m<div>[39m
-          [36m<nav[39m
-            [33mclass[39m=[32m"chakra-stack css-yebkzq"[39m
+        [36m<nav[39m
+          [33mclass[39m=[32m"chakra-stack css-1ufnxgh"[39m
+        [36m>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"chakra-stack css-12vdasz"[39m
           [36m>[39m
-            [36m<div[39m
-              [33mclass[39m=[32m"chakra-stack css-12vdasz"[39m
+            [36m<a[39m
+              [33mhref[39m=[32m"/"[39m
             [36m>[39m
-              [36m<a[39m
-                [33mclass[39m=[32m"chakra-link css-spn4bz"[39m
-                [33mhref[39m=[32m"/"[39m
-              [36m>[39m
-                [36m<img[39m
-                  [33malt[39m=[32m"CS+SG logo"[39m
-                  [33mclass[39m=[32m"chakra-image css-sk9oah"[39m
-                  [33msrc[39m=[32m"logo-color.svg"[39m
-                [36m/>[39m
-              [36m</a>[39m
-              [36m<a[39m
-                [33mhref[39m=[32m"/"[39m
-              [36m>[39m
-                [36m<h2[39m
-                  [33mclass[39m=[32m"chakra-heading css-17sgvs9"[39m
-                [36m>[39m
-                  [0mUD Buy & Sell[0m
-                [36m</h2>[39m
-              [36m</a>[39m
-            [36m</div>[39m
-            [36m<div[39m
-              [33mclass[39m=[32m"chakra-stack css-lgvjn3"[39m
+              [36m<img[39m
+                [33malt[39m=[32m"CS+SG logo"[39m
+                [33mclass[39m=[32m"chakra-image css-sk9oah"[39m
+                [33msrc[39m=[32m"logo-color.svg"[39m
+              [36m/>[39m
+            [36m</a>[39m
+            [36m<a[39m
+              [33mhref[39m=[32m"/"[39m
             [36m>[39m
-              [36m<a[39m
-                [33mclass[39m=[32m"chakra-link css-c9et93"[39m
-                [33mhref[39m=[32m"/categories"[39m
+              [36m<h2[39m
+                [33mclass[39m=[32m"chakra-heading css-17sgvs9"[39m
+              [36m>[39m
+                [0mUD Buy & Sell[0m
+              [36m</h2>[39m
+            [36m</a>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"chakra-stack css-lgvjn3"[39m
+          [36m>[39m
+            [36m<a[39m
+              [33mhref[39m=[32m"/categories"[39m
+            [36m>[39m
+              [36m<p[39m
+                [33mclass[39m=[32m"chakra-text css-ocmm0j"[39m
               [36m>[39m
                 [0mCategories[0m
-              [36m</a>[39m
-              [36m<a[39m
-                [33mclass[39m=[32m"chakra-link css-c9et93"[39m
-                [33mhref[39m=[32m"/listings"[39m
+              [36m</p>[39m
+            [36m</a>[39m
+            [36m<a[39m
+              [33mhref[39m=[32m"/listings"[39m
+            [36m>[39m
+              [36m<p[39m
+                [33mclass[39m=[32m"chakra-text css-ocmm0j"[39m
               [36m>[39m
                 [0mListings[0m
-              [36m</a>[39m
-              [36m<a[39m
-                [33mclass[39m=[32m"chakra-link css-c9et93"[39m
-                [33mhref[39m=[32m"/sell"[39m
+              [36m</p>[39m
+            [36m</a>[39m
+            [36m<a[39m
+              [33mhref[39m=[32m"/sell"[39m
+            [36m>[39m
+              [36m<p[39m
+                [33mclass[39m=[32m"chakra-text css-ocmm0j"[39m
               [36m>[39m
                 [0mSell an Item[0m
-              [36m</a>[39m
-            [36m</div>[39m
-            [36m<div[39m
-              [33mclass[39m=[32m"css-hfuuju"[39m
+              [36m</p>[39m
+            [36m</a>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"css-hfuuju"[39m
+          [36m>[39m
+            [36m<button[39m
+              [33maria-label[39m=[32m"Switch to dark mode"[39m
+              [33mclass[39m=[32m"chakra-button css-lbst7"[39m
+              [33mtype[39m=[32m"button"[39m
+            [36m>[39m
+              [36m<svg[39m
+                [33maria-hidden[39m=[32m"true"[39m
+                [33mfill[39m=[32m"currentColor"[39m
+                [33mfocusable[39m=[32m"false"[39m
+                [33mfont-size[39m=[32m"22px"[39m
+                [33mheight[39m=[32m"1em"[39m
+                [33mstroke[39m=[32m"currentColor"[39m
+                [33mstroke-width[39m=[32m"0"[39m
+                [33mviewBox[39m=[32m"0 0 512 512"[39m
+                [33mwidth[39m=[32m"1em"[39m
+                [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+              [36m>[39m
+                [36m<path[39m
+                  [33md[39m=[32m"M283.211 512c78.962 0 151.079-35.925 198.857-94.792 7.068-8.708-.639-21.43-11.562-19.35-124.203 23.654-238.262-71.576-238.262-196.954 0-72.222 38.662-138.635 101.498-174.394 9.686-5.512 7.25-20.197-3.756-22.23A258.156 258.156 0 0 0 283.211 0c-141.309 0-256 114.511-256 256 0 141.309 114.511 256 256 256z"[39m
+                [36m/>[39m
+              [36m</svg>[39m
+            [36m</button>[39m
+            [36m<a[39m
+              [33mhref[39m=[32m"/cart"[39m
             [36m>[39m
               [36m<button[39m
-                [33maria-label[39m=[32m"Switch to dark mode"[39m
-                [33mclass[39m=[32m"chakra-button css-lbst7"[39m
-                [33mtype[39m=[32m"button"[39m
-              [36m>[39m
-                [36m<svg[39m
-                  [33maria-hidden[39m=[32m"true"[39m
-                  [33mfill[39m=[32m"currentColor"[39m
-                  [33mfocusable[39m=[32m"false"[39m
-                  [33mfont-size[39m=[32m"22px"[39m
-                  [33mheight[39m=[32m"1em"[39m
-                  [33mstroke[39m=[32m"currentColor"[39m
-                  [33mstroke-width[39m=[32m"0"[39m
-                  [33mviewBox[39m=[32m"0 0 512 512"[39m
-                  [33mwidth[39m=[32m"1em"[39m
-                  [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
-                [36m>[39m
-                  [36m<path[39m
-                    [33md[39m=[32m"M283.211 512c78.962 0 151.079-35.925 198.857-94.792 7.068-8.708-.639-21.43-11.562-19.35-124.203 23.654-238.262-71.576-238.262-196.954 0-72.222 38.662-138.635 101.498-174.394 9.686-5.512 7.25-20.197-3.756-22.23A258.156 258.156 0 0 0 283.211 0c-141.309 0-256 114.511-256 256 0 141.309 114.511 256 256 256z"[39m
-                  [36m/>[39m
-                [36m</svg>[39m
-              [36m</button>[39m
-              [36m<button[39m
-                [33maria-label[39m=[32m"Search catalog"[39m
+                [33maria-label[39m=[32m"Cart"[39m
                 [33mclass[39m=[32m"chakra-button css-1jlmy26"[39m
                 [33mtype[39m=[32m"button"[39m
               [36m>[39m
@@ -111,8 +121,12 @@ FAIL src/App.test.tsx
                   [36m/>[39m
                 [36m</svg>[39m
               [36m</button>[39m
+            [36m</a>[39m
+            [36m<a[39m
+              [33mhref[39m=[32m"/account"[39m
+            [36m>[39m
               [36m<button[39m
-                [33maria-label[39m=[32m"Search catalog"[39m
+                [33maria-label[39m=[32m"Account"[39m
                 [33mclass[39m=[32m"chakra-button css-1jlmy26"[39m
                 [33mtype[39m=[32m"button"[39m
               [36m>[39m
@@ -134,10 +148,15 @@ FAIL src/App.test.tsx
                   [36m/>[39m
                 [36m</svg>[39m
               [36m</button>[39m
-            [36m</div>[39m
-          [36m</nav>[39m
+            [36m</a>[39m
+          [36m</div>[39m
+        [36m</nav>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"css-1rvp3g8"[39m
+        [36m/>[39m
+        [36m<div>[39m
           [36m<div[39m
-            [33mclass[39m=[32m"chakra-container css-mjmo7n"[39m
+            [33mclass[39m=[32m"chakra-container css-193qvio"[39m
           [36m>[39m
             [36m<div[39m
               [33mclass[39m=[32m"chakra-container css-ugpui4"[39m
@@ -278,33 +297,42 @@ FAIL src/App.test.tsx
               [36m</div>[39m
             [36m</div>[39m
           [36m</div>[39m
-          [36m<button[39m
-            [33mclass[39m=[32m"chakra-button css-1ylbzfr"[39m
-            [33mtype[39m=[32m"button"[39m
-          [36m>[39m
-            [36m<b>[39m
-              [0mChat[0m
-            [36m</b>[39m
-            [0m   [0m
-            [36m<svg[39m
-              [33maria-hidden[39m=[32m"true"[39m
-              [33mclass[39m=[32m"svg-inline--fa fa-message "[39m
-              [33mcolor[39m=[32m"white"[39m
-              [33mdata-icon[39m=[32m"message"[39m
-              [33mdata-prefix[39m=[32m"fas"[39m
-              [33mfocusable[39m=[32m"false"[39m
-              [33mfont-size[39m=[32m"22px"[39m
-              [33mrole[39m=[32m"img"[39m
-              [33mviewBox[39m=[32m"0 0 512 512"[39m
-              [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
-            [36m>[39m
-              [36m<path[39m
-                [33md[39m=[32m"M64 0C28.7 0 0 28.7 0 64V352c0 35.3 28.7 64 64 64h96v80c0 6.1 3.4 11.6 8.8 14.3s11.9 2.1 16.8-1.5L309.3 416H448c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H64z"[39m
-                [33mfill[39m=[32m"currentColor"[39m
-              [36m/>[39m
-            [36m</svg>[39m
-          [36m</button>[39m
         [36m</div>[39m
+        [36m<button[39m
+          [33mclass[39m=[32m"chakra-button css-1ufibi7"[39m
+          [33mtype[39m=[32m"button"[39m
+        [36m>[39m
+          [36m<b>[39m
+            [0mChat[0m
+          [36m</b>[39m
+          [0m  [0m
+          [36m<svg[39m
+            [33maria-hidden[39m=[32m"true"[39m
+            [33mclass[39m=[32m"svg-inline--fa fa-message "[39m
+            [33mcolor[39m=[32m"white"[39m
+            [33mdata-icon[39m=[32m"message"[39m
+            [33mdata-prefix[39m=[32m"fas"[39m
+            [33mfocusable[39m=[32m"false"[39m
+            [33mfont-size[39m=[32m"18px"[39m
+            [33mrole[39m=[32m"img"[39m
+            [33mviewBox[39m=[32m"0 0 512 512"[39m
+            [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+          [36m>[39m
+            [36m<path[39m
+              [33md[39m=[32m"M64 0C28.7 0 0 28.7 0 64V352c0 35.3 28.7 64 64 64h96v80c0 6.1 3.4 11.6 8.8 14.3s11.9 2.1 16.8-1.5L309.3 416H448c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H64z"[39m
+              [33mfill[39m=[32m"currentColor"[39m
+            [36m/>[39m
+          [36m</svg>[39m
+        [36m</button>[39m
+        [36m<footer[39m
+          [33mclass[39m=[32m"chakra-stack css-1oclma1"[39m
+        [36m>[39m
+          [36m<p[39m
+            [33mclass[39m=[32m"chakra-text css-79wky"[39m
+          [36m>[39m
+            [0mFooter (to-do)[0m
+          [36m</p>[39m
+        [36m</footer>[39m
         [36m<span[39m
           [33mhidden[39m=[32m""[39m
           [33mid[39m=[32m"__chakra_env"[39m
@@ -388,23 +416,32 @@ ever be fixed. Add "@babel/plugin-proposal-private-property-in-object" to
 your devDependencies to work around this error. This will make this message
 go away.[0m
   
------------------------|---------|----------|---------|---------|-------------------
-File                   | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
------------------------|---------|----------|---------|---------|-------------------
-All files              |   26.43 |        0 |   21.42 |   26.74 |                   
- App.tsx               |   76.92 |      100 |      25 |   76.92 | 30-34,96          
- ChatBot.tsx           |     100 |      100 |     100 |     100 |                   
- ColorModeSwitcher.tsx |     100 |      100 |     100 |     100 |                   
- Logo.tsx              |       0 |        0 |       0 |       0 | 11-23             
- Navbar.tsx            |     100 |      100 |     100 |     100 |                   
- index.tsx             |       0 |        0 |     100 |       0 | 9-30              
- reportWebVitals.ts    |       0 |        0 |       0 |       0 | 3-10              
- serviceWorker.ts      |       0 |        0 |       0 |       0 | 13-143            
- test-utils.tsx        |     100 |      100 |     100 |     100 |                   
- theme.ts              |       0 |      100 |     100 |       0 | 5-11              
------------------------|---------|----------|---------|---------|-------------------
+------------------------|---------|----------|---------|---------|-------------------
+File                    | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+------------------------|---------|----------|---------|---------|-------------------
+All files               |   29.35 |        0 |   22.85 |   29.62 |                   
+ src                    |   21.79 |        0 |   26.92 |   22.07 |                   
+  App.tsx               |     100 |      100 |     100 |     100 |                   
+  ChatBot.tsx           |     100 |      100 |     100 |     100 |                   
+  ColorModeSwitcher.tsx |     100 |      100 |     100 |     100 |                   
+  Footer.tsx            |     100 |      100 |     100 |     100 |                   
+  Logo.tsx              |       0 |        0 |       0 |       0 | 11-23             
+  Navbar.tsx            |     100 |      100 |     100 |     100 |                   
+  index.tsx             |       0 |        0 |     100 |       0 | 9-30              
+  reportWebVitals.ts    |       0 |        0 |       0 |       0 | 3-10              
+  serviceWorker.ts      |       0 |        0 |       0 |       0 | 13-143            
+  test-utils.tsx        |     100 |      100 |     100 |     100 |                   
+  theme.ts              |       0 |      100 |     100 |       0 | 5-11              
+ src/pages              |   48.38 |      100 |   11.11 |   48.38 |                   
+  Account.tsx           |   33.33 |      100 |       0 |   33.33 | 9-11              
+  Cart.tsx              |   33.33 |      100 |       0 |   33.33 | 9-11              
+  Categories.tsx        |   33.33 |      100 |       0 |   33.33 | 9-11              
+  Home.tsx              |   76.92 |      100 |      25 |   76.92 | 28-32,92          
+  Listings.tsx          |   16.66 |      100 |       0 |   16.66 | 18-23             
+  Sell.tsx              |   33.33 |      100 |       0 |   33.33 | 9-11              
+------------------------|---------|----------|---------|---------|-------------------
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        3.659 s
+Time:        3.924 s
 Ran all test suites.
