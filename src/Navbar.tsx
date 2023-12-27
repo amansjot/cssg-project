@@ -1,7 +1,15 @@
 import * as React from "react";
-import { Flex, Heading, Image, HStack, IconButton, Link } from "@chakra-ui/react";
+import {
+  Flex,
+  Heading,
+  Image,
+  HStack,
+  IconButton,
+  Link,
+} from "@chakra-ui/react";
 import { faCartShopping, faUser } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { ColorModeSwitcher } from "./ColorModeSwitcher";
 
 export const Navbar = () => {
   return (
@@ -70,21 +78,9 @@ export const Navbar = () => {
         >
           Sell an Item
         </Link>
-        <Link
-          href="/messages"
-          borderBottom="2px solid transparent"
-          pb="4px"
-          fontSize="20px"
-          mb="-4px"
-          _hover={{
-            borderBottom: "2px solid white",
-            transition: "0.3s ease",
-          }}
-        >
-          Messages
-        </Link>
       </HStack>
       <Flex position="absolute" right="20px">
+        <ColorModeSwitcher/>
         <IconButton
           bg="#00539f"
           border="1px solid #00539f"

@@ -18,15 +18,20 @@ import {
   Divider,
   Stack,
 } from "@chakra-ui/react";
-// import { ColorModeSwitcher } from "./ColorModeSwitcher";
 import { Search2Icon } from "@chakra-ui/icons";
 import { Navbar } from "./Navbar";
+import { ChatBot } from "./ChatBot";
 // import { Logo } from "./Logo";
+
+import { faMessage } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const App = () => {
   const [searchQuery, setSearchQuery] = useState<string>("");
 
-  const handleSearchQueryChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+  const handleSearchQueryChange = (
+    event: React.ChangeEvent<HTMLInputElement>
+  ) => {
     setSearchQuery(event.target.value);
   };
 
@@ -36,7 +41,7 @@ export const App = () => {
 
   return (
     <ChakraProvider theme={theme}>
-      <Navbar/>
+      <Navbar />
       <Container
         mt="90px"
         maxW="100%"
@@ -83,8 +88,8 @@ export const App = () => {
               h="50px"
               w="50px"
               aria-label="Search catalog"
-              onClick={() => handleSearch()} 
-              icon={<Search2Icon/>}
+              onClick={() => handleSearch()}
+              icon={<Search2Icon />}
               _hover={{
                 bg: "#00539f",
                 color: "#ffd200",
@@ -147,6 +152,8 @@ export const App = () => {
           </Card>
         </Center>
       </Stack>
+
+      <ChatBot />
     </ChakraProvider>
   );
 };
