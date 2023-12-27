@@ -13,10 +13,12 @@
     "@types/node": "^20.8.10",
     "@types/react": "^18.2.34",
     "@types/react-dom": "^18.2.14",
+    "@types/react-router-dom": "^5.3.3",
     "framer-motion": "^10.16.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.11.0",
+    "react-router-dom": "^6.21.1",
     "react-scripts": "5.0.1",
     "typescript": "^5.2.2",
     "web-vitals": "^3.5.0"

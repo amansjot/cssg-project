@@ -12,8 +12,7 @@ const theme = extendTheme({
   config,
   colors: {
     brand: {
-      "lightgrey": "#ddd",
-      "darkgrey": "#333",
+      "blue": "#00539f",
     },
   },
 });
