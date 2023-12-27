@@ -3,7 +3,7 @@
 > react-scripts test --coverage
 
 FAIL src/App.test.tsx
-  ✕ renders learn react link (347 ms)
+  ✕ renders learn react link (278 ms)
 
   ● renders learn react link
 
@@ -14,166 +14,349 @@ FAIL src/App.test.tsx
       [33mclass[39m=[32m"chakra-ui-light"[39m
     [36m>[39m
       [36m<div>[39m
-        [36m<nav[39m
-          [33mclass[39m=[32m"chakra-stack css-yebkzq"[39m
-        [36m>[39m
-          [36m<div[39m
-            [33mclass[39m=[32m"chakra-stack css-12vdasz"[39m
-          [36m>[39m
-            [36m<a[39m
-              [33mclass[39m=[32m"chakra-link css-spn4bz"[39m
-              [33mhref[39m=[32m"/"[39m
-            [36m>[39m
-              [36m<img[39m
-                [33malt[39m=[32m"CS+SG logo"[39m
-                [33mclass[39m=[32m"chakra-image css-sk9oah"[39m
-                [33msrc[39m=[32m"logo-color.svg"[39m
-              [36m/>[39m
-            [36m</a>[39m
-            [36m<a[39m
-              [33mhref[39m=[32m"/"[39m
-            [36m>[39m
-              [36m<h2[39m
-                [33mclass[39m=[32m"chakra-heading css-17sgvs9"[39m
-              [36m>[39m
-                [0mUD Buy & Sell[0m
-              [36m</h2>[39m
-            [36m</a>[39m
-          [36m</div>[39m
-          [36m<div[39m
-            [33mclass[39m=[32m"chakra-stack css-lgvjn3"[39m
-          [36m>[39m
-            [36m<a[39m
-              [33mclass[39m=[32m"chakra-link css-c9et93"[39m
-              [33mhref[39m=[32m"/categories"[39m
-            [36m>[39m
-              [0mCategories[0m
-            [36m</a>[39m
-            [36m<a[39m
-              [33mclass[39m=[32m"chakra-link css-c9et93"[39m
-              [33mhref[39m=[32m"/listings"[39m
-            [36m>[39m
-              [0mListings[0m
-            [36m</a>[39m
-            [36m<a[39m
-              [33mclass[39m=[32m"chakra-link css-c9et93"[39m
-              [33mhref[39m=[32m"/sell"[39m
-            [36m>[39m
-              [0mSell an Item[0m
-            [36m</a>[39m
-          [36m</div>[39m
-          [36m<div[39m
-            [33mclass[39m=[32m"css-hfuuju"[39m
-          [36m>[39m
-            [36m<button[39m
-              [33maria-label[39m=[32m"Switch to dark mode"[39m
-              [33mclass[39m=[32m"chakra-button css-lbst7"[39m
-              [33mtype[39m=[32m"button"[39m
-            [36m>[39m
-              [36m<svg[39m
-                [33maria-hidden[39m=[32m"true"[39m
-                [33mfill[39m=[32m"currentColor"[39m
-                [33mfocusable[39m=[32m"false"[39m
-                [33mfont-size[39m=[32m"22px"[39m
-                [33mheight[39m=[32m"1em"[39m
-                [33mstroke[39m=[32m"currentColor"[39m
-                [33mstroke-width[39m=[32m"0"[39m
-                [33mviewBox[39m=[32m"0 0 512 512"[39m
-                [33mwidth[39m=[32m"1em"[39m
-                [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
-              [36m>[39m
-                [36m<path[39m
-                  [33md[39m=[32m"M283.211 512c78.962 0 151.079-35.925 198.857-94.792 7.068-8.708-.639-21.43-11.562-19.35-124.203 23.654-238.262-71.576-238.262-196.954 0-72.222 38.662-138.635 101.498-174.394 9.686-5.512 7.25-20.197-3.756-22.23A258.156 258.156 0 0 0 283.211 0c-141.309 0-256 114.511-256 256 0 141.309 114.511 256 256 256z"[39m
-                [36m/>[39m
-              [36m</svg>[39m
-            [36m</button>[39m
-            [36m<button[39m
-              [33maria-label[39m=[32m"Search catalog"[39m
-              [33mclass[39m=[32m"chakra-button css-1jlmy26"[39m
-              [33mtype[39m=[32m"button"[39m
-            [36m>[39m
-              [36m<svg[39m
-                [33maria-hidden[39m=[32m"true"[39m
-                [33mclass[39m=[32m"svg-inline--fa fa-cart-shopping "[39m
-                [33mcolor[39m=[32m"white"[39m
-                [33mdata-icon[39m=[32m"cart-shopping"[39m
-                [33mdata-prefix[39m=[32m"fas"[39m
-                [33mfocusable[39m=[32m"false"[39m
-                [33mfont-size[39m=[32m"22px"[39m
-                [33mrole[39m=[32m"img"[39m
-                [33mviewBox[39m=[32m"0 0 576 512"[39m
-                [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
-              [36m>[39m
-                [36m<path[39m
-                  [33md[39m=[32m"M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"[39m
-                  [33mfill[39m=[32m"currentColor"[39m
-                [36m/>[39m
-              [36m</svg>[39m
-            [36m</button>[39m
-            [36m<button[39m
-              [33maria-label[39m=[32m"Search catalog"[39m
-              [33mclass[39m=[32m"chakra-button css-1jlmy26"[39m
-              [33mtype[39m=[32m"button"[39m
-            [36m>[39m
-              [36m<svg[39m
-                [33maria-hidden[39m=[32m"true"[39m
-                [33mclass[39m=[32m"svg-inline--fa fa-user "[39m
-                [33mcolor[39m=[32m"white"[39m
-                [33mdata-icon[39m=[32m"user"[39m
-                [33mdata-prefix[39m=[32m"fas"[39m
-                [33mfocusable[39m=[32m"false"[39m
-                [33mfont-size[39m=[32m"22px"[39m
-                [33mrole[39m=[32m"img"[39m
-                [33mviewBox[39m=[32m"0 0 448 512"[39m
-                [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
-              [36m>[39m
-                [36m<path[39m
-                  [33md[39m=[32m"M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"[39m
-                  [33mfill[39m=[32m"currentColor"[39m
-                [36m/>[39m
-              [36m</svg>[39m
-            [36m</button>[39m
-          [36m</div>[39m
-        [36m</nav>[39m
-        [36m<div[39m
-          [33mclass[39m=[32m"chakra-container css-mjmo7n"[39m
-        [36m>[39m
-          [36m<div[39m
-            [33mclass[39m=[32m"chakra-container css-ugpui4"[39m
-          [36m>[39m
-            [36m<img[39m
-              [33malt[39m=[32m"CS+SG logo"[39m
-              [33mclass[39m=[32m"chakra-image css-6evhbc"[39m
-              [33msrc[39m=[32m"logo-color.svg"[39m
-            [36m/>[39m
-            [36m<h2[39m
-              [33mclass[39m=[32m"chakra-heading css-13yglpk"[39m
-            [36m>[39m
-              [0mUD Buy & Sell[0m
-            [36m</h2>[39m
-            [36m<h2[39m
-              [33mclass[39m=[32m"chakra-heading css-1ol3kib"[39m
-            [36m>[39m
-              [0mby CS for Social Good[0m
-            [36m</h2>[39m
-          [36m</div>[39m
-          [36m<div[39m
-            [33mclass[39m=[32m"chakra-container css-z1tyh0"[39m
+        [36m<div>[39m
+          [36m<nav[39m
+            [33mclass[39m=[32m"chakra-stack css-yebkzq"[39m
           [36m>[39m
             [36m<div[39m
-              [33mclass[39m=[32m"chakra-stack css-1htq713"[39m
+              [33mclass[39m=[32m"chakra-stack css-12vdasz"[39m
             [36m>[39m
-              [36m<input[39m
-                [33mclass[39m=[32m"chakra-input css-1lxjy6s"[39m
-                [33mplaceholder[39m=[32m"What would you like to find?"[39m
-              [36m/>[39m
+              [36m<a[39m
+                [33mclass[39m=[32m"chakra-link css-spn4bz"[39m
+                [33mhref[39m=[32m"/"[39m
+              [36m>[39m
+                [36m<img[39m
+                  [33malt[39m=[32m"CS+SG logo"[39m
+                  [33mclass[39m=[32m"chakra-image css-sk9oah"[39m
+                  [33msrc[39m=[32m"logo-color.svg"[39m
+                [36m/>[39m
+              [36m</a>[39m
+              [36m<a[39m
+                [33mhref[39m=[32m"/"[39m
+              [36m>[39m
+                [36m<h2[39m
+                  [33mclass[39m=[32m"chakra-heading css-17sgvs9"[39m
+                [36m>[39m
+                  [0mUD Buy & Sell[0m
+                [36m</h2>[39m
+              [36m</a>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"chakra-stack css-lgvjn3"[39m
+            [36m>[39m
+              [36m<a[39m
+                [33mclass[39m=[32m"chakra-link css-c9et93"[39m
+                [33mhref[39m=[32m"/categories"[39m
+              [36m>[39m
+                [0mCategories[0m
+              [36m</a>[39m
+              [36m<a[39m
+                [33mclass[39m=[32m"chakra-link css-c9et93"[39m
+                [33mhref[39m=[32m"/listings"[39m
+              [36m>[39m
+                [0mListings[0m
+              [36m</a>[39m
+              [36m<a[39m
+                [33mclass[39m=[32m"chakra-link css-c9et93"[39m
+                [33mhref[39m=[32m"/sell"[39m
+              [36m>[39m
+                [0mSell an Item[0m
+              [36m</a>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"css-hfuuju"[39m
+            [36m>[39m
               [36m<button[39m
-                [33maria-label[39m=[32m"Search catalog"[39m
-                [33mclass[39m=[32m"chakra-button css-2alucb"[39m
+                [33maria-label[39m=[32m"Switch to dark mode"[39m
+                [33mclass[39m=[32m"chakra-button css-lbst7"[39m
                 [33mtype[39m=[32m"button"[39m
               [36m>[39m
                 [36m<svg[39m
-            ...
+                  [33maria-hidden[39m=[32m"true"[39m
+                  [33mfill[39m=[32m"currentColor"[39m
+                  [33mfocusable[39m=[32m"false"[39m
+                  [33mfont-size[39m=[32m"22px"[39m
+                  [33mheight[39m=[32m"1em"[39m
+                  [33mstroke[39m=[32m"currentColor"[39m
+                  [33mstroke-width[39m=[32m"0"[39m
+                  [33mviewBox[39m=[32m"0 0 512 512"[39m
+                  [33mwidth[39m=[32m"1em"[39m
+                  [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+                [36m>[39m
+                  [36m<path[39m
+                    [33md[39m=[32m"M283.211 512c78.962 0 151.079-35.925 198.857-94.792 7.068-8.708-.639-21.43-11.562-19.35-124.203 23.654-238.262-71.576-238.262-196.954 0-72.222 38.662-138.635 101.498-174.394 9.686-5.512 7.25-20.197-3.756-22.23A258.156 258.156 0 0 0 283.211 0c-141.309 0-256 114.511-256 256 0 141.309 114.511 256 256 256z"[39m
+                  [36m/>[39m
+                [36m</svg>[39m
+              [36m</button>[39m
+              [36m<button[39m
+                [33maria-label[39m=[32m"Search catalog"[39m
+                [33mclass[39m=[32m"chakra-button css-1jlmy26"[39m
+                [33mtype[39m=[32m"button"[39m
+              [36m>[39m
+                [36m<svg[39m
+                  [33maria-hidden[39m=[32m"true"[39m
+                  [33mclass[39m=[32m"svg-inline--fa fa-cart-shopping "[39m
+                  [33mcolor[39m=[32m"white"[39m
+                  [33mdata-icon[39m=[32m"cart-shopping"[39m
+                  [33mdata-prefix[39m=[32m"fas"[39m
+                  [33mfocusable[39m=[32m"false"[39m
+                  [33mfont-size[39m=[32m"22px"[39m
+                  [33mrole[39m=[32m"img"[39m
+                  [33mviewBox[39m=[32m"0 0 576 512"[39m
+                  [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+                [36m>[39m
+                  [36m<path[39m
+                    [33md[39m=[32m"M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"[39m
+                    [33mfill[39m=[32m"currentColor"[39m
+                  [36m/>[39m
+                [36m</svg>[39m
+              [36m</button>[39m
+              [36m<button[39m
+                [33maria-label[39m=[32m"Search catalog"[39m
+                [33mclass[39m=[32m"chakra-button css-1jlmy26"[39m
+                [33mtype[39m=[32m"button"[39m
+              [36m>[39m
+                [36m<svg[39m
+                  [33maria-hidden[39m=[32m"true"[39m
+                  [33mclass[39m=[32m"svg-inline--fa fa-user "[39m
+                  [33mcolor[39m=[32m"white"[39m
+                  [33mdata-icon[39m=[32m"user"[39m
+                  [33mdata-prefix[39m=[32m"fas"[39m
+                  [33mfocusable[39m=[32m"false"[39m
+                  [33mfont-size[39m=[32m"22px"[39m
+                  [33mrole[39m=[32m"img"[39m
+                  [33mviewBox[39m=[32m"0 0 448 512"[39m
+                  [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+                [36m>[39m
+                  [36m<path[39m
+                    [33md[39m=[32m"M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"[39m
+                    [33mfill[39m=[32m"currentColor"[39m
+                  [36m/>[39m
+                [36m</svg>[39m
+              [36m</button>[39m
+            [36m</div>[39m
+          [36m</nav>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"chakra-container css-mjmo7n"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"chakra-container css-ugpui4"[39m
+            [36m>[39m
+              [36m<img[39m
+                [33malt[39m=[32m"CS+SG logo"[39m
+                [33mclass[39m=[32m"chakra-image css-6evhbc"[39m
+                [33msrc[39m=[32m"logo-color.svg"[39m
+              [36m/>[39m
+              [36m<h2[39m
+                [33mclass[39m=[32m"chakra-heading css-13yglpk"[39m
+              [36m>[39m
+                [0mUD Buy & Sell[0m
+              [36m</h2>[39m
+              [36m<h2[39m
+                [33mclass[39m=[32m"chakra-heading css-1ol3kib"[39m
+              [36m>[39m
+                [0mby CS for Social Good[0m
+              [36m</h2>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"chakra-container css-z1tyh0"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"chakra-stack css-1htq713"[39m
+              [36m>[39m
+                [36m<input[39m
+                  [33mclass[39m=[32m"chakra-input css-1yp9xhl"[39m
+                  [33mname[39m=[32m"search"[39m
+                  [33mplaceholder[39m=[32m"What would you like to find?"[39m
+                [36m/>[39m
+                [36m<button[39m
+                  [33maria-label[39m=[32m"Search catalog"[39m
+                  [33mclass[39m=[32m"chakra-button css-14km3vz"[39m
+                  [33mtype[39m=[32m"button"[39m
+                [36m>[39m
+                  [36m<svg[39m
+                    [33maria-hidden[39m=[32m"true"[39m
+                    [33mclass[39m=[32m"chakra-icon css-onkibi"[39m
+                    [33mfocusable[39m=[32m"false"[39m
+                    [33mviewBox[39m=[32m"0 0 24 24"[39m
+                  [36m>[39m
+                    [36m<path[39m
+                      [33md[39m=[32m"M23.414,20.591l-4.645-4.645a10.256,10.256,0,1,0-2.828,2.829l4.645,4.644a2.025,2.025,0,0,0,2.828,0A2,2,0,0,0,23.414,20.591ZM10.25,3.005A7.25,7.25,0,1,1,3,10.255,7.258,7.258,0,0,1,10.25,3.005Z"[39m
+                      [33mfill[39m=[32m"currentColor"[39m
+                    [36m/>[39m
+                  [36m</svg>[39m
+                [36m</button>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+          [36m<br />[39m
+          [36m<hr[39m
+            [33maria-orientation[39m=[32m"horizontal"[39m
+            [33mclass[39m=[32m"chakra-divider css-svjswr"[39m
+          [36m/>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"chakra-stack css-192ci12"[39m
+          [36m>[39m
+            [36m<br />[39m
+            [36m<br />[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"css-gmuwbf"[39m
+            [36m>[39m
+              [0m [0m
+              [36m<h2[39m
+                [33mclass[39m=[32m"chakra-heading css-1dklj6k"[39m
+              [36m>[39m
+                [0mListings[0m
+              [36m</h2>[39m
+            [36m</div>[39m
+            [36m<br />[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"css-gmuwbf"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"chakra-card css-1hs08yp"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"chakra-card__body css-1idwstw"[39m
+                [36m>[39m
+                  [36m<img[39m
+                    [33malt[39m=[32m"Green double couch with wooden legs"[39m
+                    [33mclass[39m=[32m"chakra-image css-11jlpvc"[39m
+                    [33msrc[39m=[32m"https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"[39m
+                  [36m/>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"chakra-stack css-1gottk"[39m
+                  [36m>[39m
+                    [36m<h2[39m
+                      [33mclass[39m=[32m"chakra-heading css-18j379d"[39m
+                    [36m>[39m
+                      [0mLiving room Chair[0m
+                    [36m</h2>[39m
+                    [36m<p[39m
+                      [33mclass[39m=[32m"chakra-text css-6xix1i"[39m
+                    [36m>[39m
+                      [0mFREE SHIPPING[0m
+                    [36m</p>[39m
+                    [36m<p[39m
+                      [33mclass[39m=[32m"chakra-text css-0"[39m
+                    [36m>[39m
+                      [0mThis sofa is perfect for modern tropical spaces, baroque inspired spaces, earthy toned spaces and for people who love a chic design with a sprinkle of vintage design.[0m
+                    [36m</p>[39m
+                    [36m<p[39m
+                      [33mclass[39m=[32m"chakra-text css-nbdq8z"[39m
+                    [36m>[39m
+                      [0m$5[0m
+                    [36m</p>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+                [36m<hr[39m
+                  [33maria-orientation[39m=[32m"horizontal"[39m
+                  [33mclass[39m=[32m"chakra-divider css-svjswr"[39m
+                [36m/>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"chakra-card__footer css-1a7q9t8"[39m
+                [36m>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"chakra-button__group css-18heqsi"[39m
+                    [33mdata-orientation[39m=[32m"horizontal"[39m
+                    [33mrole[39m=[32m"group"[39m
+                  [36m>[39m
+                    [36m<button[39m
+                      [33mclass[39m=[32m"chakra-button css-1tduvxh"[39m
+                      [33mtype[39m=[32m"button"[39m
+                    [36m>[39m
+                      [0mBuy now[0m
+                    [36m</button>[39m
+                    [36m<button[39m
+                      [33mclass[39m=[32m"chakra-button css-19nb8tt"[39m
+                      [33mtype[39m=[32m"button"[39m
+                    [36m>[39m
+                      [0mAdd to cart[0m
+                    [36m</button>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+          [36m<button[39m
+            [33mclass[39m=[32m"chakra-button css-1ylbzfr"[39m
+            [33mtype[39m=[32m"button"[39m
+          [36m>[39m
+            [36m<b>[39m
+              [0mChat[0m
+            [36m</b>[39m
+            [0m   [0m
+            [36m<svg[39m
+              [33maria-hidden[39m=[32m"true"[39m
+              [33mclass[39m=[32m"svg-inline--fa fa-message "[39m
+              [33mcolor[39m=[32m"white"[39m
+              [33mdata-icon[39m=[32m"message"[39m
+              [33mdata-prefix[39m=[32m"fas"[39m
+              [33mfocusable[39m=[32m"false"[39m
+              [33mfont-size[39m=[32m"22px"[39m
+              [33mrole[39m=[32m"img"[39m
+              [33mviewBox[39m=[32m"0 0 512 512"[39m
+              [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
+            [36m>[39m
+              [36m<path[39m
+                [33md[39m=[32m"M64 0C28.7 0 0 28.7 0 64V352c0 35.3 28.7 64 64 64h96v80c0 6.1 3.4 11.6 8.8 14.3s11.9 2.1 16.8-1.5L309.3 416H448c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H64z"[39m
+                [33mfill[39m=[32m"currentColor"[39m
+              [36m/>[39m
+            [36m</svg>[39m
+          [36m</button>[39m
+        [36m</div>[39m
+        [36m<span[39m
+          [33mhidden[39m=[32m""[39m
+          [33mid[39m=[32m"__chakra_env"[39m
+        [36m/>[39m
+      [36m</div>[39m
+      [36m<div[39m
+        [33mclass[39m=[32m"chakra-portal"[39m
+      [36m>[39m
+        [36m<div[39m
+          [33maria-label[39m=[32m"Notifications"[39m
+          [33maria-live[39m=[32m"polite"[39m
+          [33mid[39m=[32m"chakra-toast-manager-top"[39m
+          [33mrole[39m=[32m"region"[39m
+          [33mstyle[39m=[32m"position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column; margin: 0px auto;"[39m
+        [36m/>[39m
+        [36m<div[39m
+          [33maria-label[39m=[32m"Notifications"[39m
+          [33maria-live[39m=[32m"polite"[39m
+          [33mid[39m=[32m"chakra-toast-manager-top-left"[39m
+          [33mrole[39m=[32m"region"[39m
+          [33mstyle[39m=[32m"position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column;"[39m
+        [36m/>[39m
+        [36m<div[39m
+          [33maria-label[39m=[32m"Notifications"[39m
+          [33maria-live[39m=[32m"polite"[39m
+          [33mid[39m=[32m"chakra-toast-manager-top-right"[39m
+          [33mrole[39m=[32m"region"[39m
+          [33mstyle[39m=[32m"position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column;"[39m
+        [36m/>[39m
+        [36m<div[39m
+          [33maria-label[39m=[32m"Notifications"[39m
+          [33maria-live[39m=[32m"polite"[39m
+          [33mid[39m=[32m"chakra-toast-manager-bottom-left"[39m
+          [33mrole[39m=[32m"region"[39m
+          [33mstyle[39m=[32m"position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column;"[39m
+        [36m/>[39m
+        [36m<div[39m
+          [33maria-label[39m=[32m"Notifications"[39m
+          [33maria-live[39m=[32m"polite"[39m
+          [33mid[39m=[32m"chakra-toast-manager-bottom"[39m
+          [33mrole[39m=[32m"region"[39m
+          [33mstyle[39m=[32m"position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column; margin: 0px auto;"[39m
+        [36m/>[39m
+        [36m<div[39m
+          [33maria-label[39m=[32m"Notifications"[39m
+          [33maria-live[39m=[32m"polite"[39m
+          [33mid[39m=[32m"chakra-toast-manager-bottom-right"[39m
+          [33mrole[39m=[32m"region"[39m
+          [33mstyle[39m=[32m"position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column;"[39m
+        [36m/>[39m
+      [36m</div>[39m
+    [36m</body>[39m
 
        6 | test("renders learn react link", () => {
        7 |   render(<App />)
@@ -208,19 +391,20 @@ go away.[0m
 -----------------------|---------|----------|---------|---------|-------------------
 File                   | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 -----------------------|---------|----------|---------|---------|-------------------
-All files              |   21.51 |        0 |   21.42 |   21.79 |                   
- App.tsx               |   57.14 |      100 |      25 |   57.14 | 31-35,87          
+All files              |   26.43 |        0 |   21.42 |   26.74 |                   
+ App.tsx               |   76.92 |      100 |      25 |   76.92 | 30-34,96          
  ChatBot.tsx           |     100 |      100 |     100 |     100 |                   
  ColorModeSwitcher.tsx |     100 |      100 |     100 |     100 |                   
  Logo.tsx              |       0 |        0 |       0 |       0 | 11-23             
  Navbar.tsx            |     100 |      100 |     100 |     100 |                   
- index.tsx             |       0 |        0 |     100 |       0 | 9-28              
+ index.tsx             |       0 |        0 |     100 |       0 | 9-30              
  reportWebVitals.ts    |       0 |        0 |       0 |       0 | 3-10              
  serviceWorker.ts      |       0 |        0 |       0 |       0 | 13-143            
  test-utils.tsx        |     100 |      100 |     100 |     100 |                   
+ theme.ts              |       0 |      100 |     100 |       0 | 5-11              
 -----------------------|---------|----------|---------|---------|-------------------
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        3.776 s
+Time:        3.576 s
 Ran all test suites.
