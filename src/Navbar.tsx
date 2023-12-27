@@ -6,6 +6,7 @@ import {
   HStack,
   IconButton,
   Link,
+  useColorModeValue,
 } from "@chakra-ui/react";
 import { faCartShopping, faUser } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

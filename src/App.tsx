@@ -1,7 +1,7 @@
 import { useState } from "react";
 import {
-  ChakraProvider,
-  theme,
+  useColorMode,
+  useColorModeValue,
   Heading,
   Image,
   HStack,
@@ -16,11 +16,13 @@ import {
   CardFooter,
   Center,
   Divider,
-  Stack,
+  Stack
 } from "@chakra-ui/react";
 import { Search2Icon } from "@chakra-ui/icons";
 import { Navbar } from "./Navbar";
 import { ChatBot } from "./ChatBot";
+import theme from "./theme";
+import { ColorModeSwitcher } from "./ColorModeSwitcher";
 
 export const App = () => {
   const [searchQuery, setSearchQuery] = useState<string>("");
@@ -35,15 +37,22 @@ export const App = () => {
     alert("You inputted: " + searchQuery);
   }
 
+  const mainbg = useColorModeValue("white", "gray.800");
+  const inputbg = useColorModeValue("white", "gray.700");
+  const greybg = useColorModeValue("gray.300", "gray.600");
+  const listingbg = useColorModeValue("blue.50", "blue.800");
+  const listingtxt = useColorModeValue("black", "white");
+  const listingborder = useColorModeValue("blue.600", "blue.900");
+
   return (
-    <ChakraProvider theme={theme}>
+    <div>
       <Navbar />
       <Container
         mt="90px"
         maxW="100%"
         textAlign="center"
         padding="25px"
-        backgroundColor="white"
+        backgroundColor={mainbg}
       >
         <Container maxW="100%" mb="10">
           <Image
@@ -65,9 +74,12 @@ export const App = () => {
           <HStack w="100%" maxW="500px" margin="0 auto" spacing="0">
             <Input
               size="lg"
+              name="search"
               height="50px"
               borderColor="#00539f"
               borderRadius="7px 0 0 7px"
+              backgroundColor={inputbg}
+              // color="black"
               placeholder="What would you like to find?"
               onChange={handleSearchQueryChange}
               _hover={{
@@ -77,7 +89,7 @@ export const App = () => {
             />
             <IconButton
               borderRadius="0 7px 7px 0"
-              bg="#00539f"
+              backgroundColor="#00539f"
               color="white"
               border="1px solid #00539f"
               ml="-1px"
@@ -99,7 +111,7 @@ export const App = () => {
       <br />
       <Divider></Divider>
 
-      <Stack bg="#eee" pb="60px">
+      <Stack backgroundColor={greybg} pb="60px">
         <br />
         <br />
         <Center>
@@ -110,10 +122,11 @@ export const App = () => {
         <Center>
           <Card
             maxW="sm"
-            bg="blue.50"
+            bg={listingbg}
+            color={listingtxt}
             borderWidth="1px"
             borderStyle="solid"
-            borderColor="blue.600"
+            borderColor={listingborder}
           >
             <CardBody>
               <Image
@@ -150,6 +163,6 @@ export const App = () => {
       </Stack>
 
       <ChatBot />
-    </ChakraProvider>
+    </div>
   );
 };
