@@ -21,10 +21,6 @@ import {
 import { Search2Icon } from "@chakra-ui/icons";
 import { Navbar } from "./Navbar";
 import { ChatBot } from "./ChatBot";
-// import { Logo } from "./Logo";
-
-import { faMessage } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const App = () => {
   const [searchQuery, setSearchQuery] = useState<string>("");
