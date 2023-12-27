@@ -1,6 +1,5 @@
 import { useState } from "react";
 import {
-  useColorMode,
   useColorModeValue,
   Heading,
   Image,
@@ -21,8 +20,6 @@ import {
 import { Search2Icon } from "@chakra-ui/icons";
 import { Navbar } from "./Navbar";
 import { ChatBot } from "./ChatBot";
-import theme from "./theme";
-import { ColorModeSwitcher } from "./ColorModeSwitcher";
 
 export const App = () => {
   const [searchQuery, setSearchQuery] = useState<string>("");
