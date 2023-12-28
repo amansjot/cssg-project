@@ -2,8 +2,89 @@
 > my-app@0.1.0 test
 > react-scripts test --coverage
 
+  console.error
+    Error: Not implemented: window.scrollTo
+        at module.exports (/home/runner/work/cssg-project/cssg-project/node_modules/jsdom/lib/jsdom/browser/not-implemented.js:9:17)
+        at scrollTo (/home/runner/work/cssg-project/cssg-project/node_modules/jsdom/lib/jsdom/browser/Window.js:866:7)
+        at /home/runner/work/cssg-project/cssg-project/src/App.tsx:18:12
+        at commitHookEffectListMount (/home/runner/work/cssg-project/cssg-project/node_modules/react-dom/cjs/react-dom.development.js:23150:26)
+        at commitPassiveMountOnFiber (/home/runner/work/cssg-project/cssg-project/node_modules/react-dom/cjs/react-dom.development.js:24931:11)
+        at commitPassiveMountEffects_complete (/home/runner/work/cssg-project/cssg-project/node_modules/react-dom/cjs/react-dom.development.js:24891:9)
+        at commitPassiveMountEffects_begin (/home/runner/work/cssg-project/cssg-project/node_modules/react-dom/cjs/react-dom.development.js:24878:7)
+        at commitPassiveMountEffects (/home/runner/work/cssg-project/cssg-project/node_modules/react-dom/cjs/react-dom.development.js:24866:3)
+        at flushPassiveEffectsImpl (/home/runner/work/cssg-project/cssg-project/node_modules/react-dom/cjs/react-dom.development.js:27039:3)
+        at flushPassiveEffects (/home/runner/work/cssg-project/cssg-project/node_modules/react-dom/cjs/react-dom.development.js:26984:14)
+        at performSyncWorkOnRoot (/home/runner/work/cssg-project/cssg-project/node_modules/react-dom/cjs/react-dom.development.js:26076:3)
+        at flushSyncCallbacks (/home/runner/work/cssg-project/cssg-project/node_modules/react-dom/cjs/react-dom.development.js:12042:22)
+        at commitRootImpl (/home/runner/work/cssg-project/cssg-project/node_modules/react-dom/cjs/react-dom.development.js:26959:3)
+        at commitRoot (/home/runner/work/cssg-project/cssg-project/node_modules/react-dom/cjs/react-dom.development.js:26682:5)
+        at finishConcurrentRender (/home/runner/work/cssg-project/cssg-project/node_modules/react-dom/cjs/react-dom.development.js:25981:9)
+        at performConcurrentWorkOnRoot (/home/runner/work/cssg-project/cssg-project/node_modules/react-dom/cjs/react-dom.development.js:25809:7)
+        at flushActQueue (/home/runner/work/cssg-project/cssg-project/node_modules/react/cjs/react.development.js:2667:24)
+        at act (/home/runner/work/cssg-project/cssg-project/node_modules/react/cjs/react.development.js:2582:11)
+        at /home/runner/work/cssg-project/cssg-project/node_modules/@testing-library/react/dist/act-compat.js:46:25
+        at renderRoot (/home/runner/work/cssg-project/cssg-project/node_modules/@testing-library/react/dist/pure.js:161:26)
+        at render (/home/runner/work/cssg-project/cssg-project/node_modules/@testing-library/react/dist/pure.js:247:10)
+        at customRender (/home/runner/work/cssg-project/cssg-project/src/test-utils.tsx:10:9)
+        at Object.<anonymous> (/home/runner/work/cssg-project/cssg-project/src/App.test.tsx:7:9)
+        at Promise.then.completed (/home/runner/work/cssg-project/cssg-project/node_modules/react-scripts/node_modules/jest-circus/build/utils.js:391:28)
+        at new Promise (<anonymous>)
+        at callAsyncCircusFn (/home/runner/work/cssg-project/cssg-project/node_modules/react-scripts/node_modules/jest-circus/build/utils.js:316:10)
+        at _callCircusTest (/home/runner/work/cssg-project/cssg-project/node_modules/react-scripts/node_modules/jest-circus/build/run.js:218:40)
+        at processTicksAndRejections (node:internal/process/task_queues:96:5)
+        at _runTest (/home/runner/work/cssg-project/cssg-project/node_modules/react-scripts/node_modules/jest-circus/build/run.js:155:3)
+        at _runTestsForDescribeBlock (/home/runner/work/cssg-project/cssg-project/node_modules/react-scripts/node_modules/jest-circus/build/run.js:66:9)
+        at run (/home/runner/work/cssg-project/cssg-project/node_modules/react-scripts/node_modules/jest-circus/build/run.js:25:3)
+        at runAndTransformResultsToJestFormat (/home/runner/work/cssg-project/cssg-project/node_modules/react-scripts/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+        at jestAdapter (/home/runner/work/cssg-project/cssg-project/node_modules/react-scripts/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
+        at runTestInternal (/home/runner/work/cssg-project/cssg-project/node_modules/react-scripts/node_modules/jest-runner/build/runTest.js:389:16)
+        at runTest (/home/runner/work/cssg-project/cssg-project/node_modules/react-scripts/node_modules/jest-runner/build/runTest.js:475:34)
+        at TestRunner.runTests (/home/runner/work/cssg-project/cssg-project/node_modules/react-scripts/node_modules/jest-runner/build/index.js:101:12)
+        at TestScheduler.scheduleTests (/home/runner/work/cssg-project/cssg-project/node_modules/react-scripts/node_modules/@jest/core/build/TestScheduler.js:333:13)
+        at runJest (/home/runner/work/cssg-project/cssg-project/node_modules/react-scripts/node_modules/@jest/core/build/runJest.js:404:19)
+        at _run10000 (/home/runner/work/cssg-project/cssg-project/node_modules/react-scripts/node_modules/@jest/core/build/cli/index.js:320:7)
+        at runCLI (/home/runner/work/cssg-project/cssg-project/node_modules/react-scripts/node_modules/@jest/core/build/cli/index.js:173:3)
+        at Object.run (/home/runner/work/cssg-project/cssg-project/node_modules/react-scripts/node_modules/jest-cli/build/cli/index.js:155:37) undefined
+
+      16 |
+      17 |   useEffect(() => {
+    > 18 |     window.scrollTo(0, 0);
+         |            ^
+      19 |   }, [pathname]);
+      20 |
+      21 |   return null;
+
+      at VirtualConsole.<anonymous> (node_modules/jsdom/lib/jsdom/virtual-console.js:29:45)
+      at module.exports (node_modules/jsdom/lib/jsdom/browser/not-implemented.js:12:26)
+      at scrollTo (node_modules/jsdom/lib/jsdom/browser/Window.js:866:7)
+      at src/App.tsx:18:12
+      at commitHookEffectListMount (node_modules/react-dom/cjs/react-dom.development.js:23150:26)
+      at commitPassiveMountOnFiber (node_modules/react-dom/cjs/react-dom.development.js:24931:11)
+      at commitPassiveMountEffects_complete (node_modules/react-dom/cjs/react-dom.development.js:24891:9)
+      at commitPassiveMountEffects_begin (node_modules/react-dom/cjs/react-dom.development.js:24878:7)
+      at commitPassiveMountEffects (node_modules/react-dom/cjs/react-dom.development.js:24866:3)
+      at flushPassiveEffectsImpl (node_modules/react-dom/cjs/react-dom.development.js:27039:3)
+      at flushPassiveEffects (node_modules/react-dom/cjs/react-dom.development.js:26984:14)
+      at performSyncWorkOnRoot (node_modules/react-dom/cjs/react-dom.development.js:26076:3)
+      at flushSyncCallbacks (node_modules/react-dom/cjs/react-dom.development.js:12042:22)
+      at commitRootImpl (node_modules/react-dom/cjs/react-dom.development.js:26959:3)
+      at commitRoot (node_modules/react-dom/cjs/react-dom.development.js:26682:5)
+      at finishConcurrentRender (node_modules/react-dom/cjs/react-dom.development.js:25981:9)
+      at performConcurrentWorkOnRoot (node_modules/react-dom/cjs/react-dom.development.js:25809:7)
+      at flushActQueue (node_modules/react/cjs/react.development.js:2667:24)
+      at act (node_modules/react/cjs/react.development.js:2582:11)
+      at node_modules/@testing-library/react/dist/act-compat.js:46:25
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:161:26)
+      at render (node_modules/@testing-library/react/dist/pure.js:247:10)
+      at customRender (src/test-utils.tsx:10:9)
+      at Object.<anonymous> (src/App.test.tsx:7:9)
+      at TestScheduler.scheduleTests (node_modules/react-scripts/node_modules/@jest/core/build/TestScheduler.js:333:13)
+      at runJest (node_modules/react-scripts/node_modules/@jest/core/build/runJest.js:404:19)
+      at _run10000 (node_modules/react-scripts/node_modules/@jest/core/build/cli/index.js:320:7)
+      at runCLI (node_modules/react-scripts/node_modules/@jest/core/build/cli/index.js:173:3)
+
 FAIL src/App.test.tsx
-  ✕ renders learn react link (308 ms)
+  ✕ renders learn react link (359 ms)
 
   ● renders learn react link
 
@@ -174,217 +255,11 @@ FAIL src/App.test.tsx
               [36m<h2[39m
                 [33mclass[39m=[32m"chakra-heading css-1ol3kib"[39m
               [36m>[39m
-                [0mby CS for Social Good[0m
+                [0mby CS + Social Good[0m
               [36m</h2>[39m
             [36m</div>[39m
             [36m<div[39m
-              [33mclass[39m=[32m"chakra-container css-z1tyh0"[39m
-            [36m>[39m
-              [36m<div[39m
-                [33mclass[39m=[32m"chakra-stack css-1htq713"[39m
-              [36m>[39m
-                [36m<input[39m
-                  [33mclass[39m=[32m"chakra-input css-1yp9xhl"[39m
-                  [33mname[39m=[32m"search"[39m
-                  [33mplaceholder[39m=[32m"What would you like to find?"[39m
-                [36m/>[39m
-                [36m<button[39m
-                  [33maria-label[39m=[32m"Search catalog"[39m
-                  [33mclass[39m=[32m"chakra-button css-14km3vz"[39m
-                  [33mtype[39m=[32m"button"[39m
-                [36m>[39m
-                  [36m<svg[39m
-                    [33maria-hidden[39m=[32m"true"[39m
-                    [33mclass[39m=[32m"chakra-icon css-onkibi"[39m
-                    [33mfocusable[39m=[32m"false"[39m
-                    [33mviewBox[39m=[32m"0 0 24 24"[39m
-                  [36m>[39m
-                    [36m<path[39m
-                      [33md[39m=[32m"M23.414,20.591l-4.645-4.645a10.256,10.256,0,1,0-2.828,2.829l4.645,4.644a2.025,2.025,0,0,0,2.828,0A2,2,0,0,0,23.414,20.591ZM10.25,3.005A7.25,7.25,0,1,1,3,10.255,7.258,7.258,0,0,1,10.25,3.005Z"[39m
-                      [33mfill[39m=[32m"currentColor"[39m
-                    [36m/>[39m
-                  [36m</svg>[39m
-                [36m</button>[39m
-              [36m</div>[39m
-            [36m</div>[39m
-          [36m</div>[39m
-          [36m<br />[39m
-          [36m<hr[39m
-            [33maria-orientation[39m=[32m"horizontal"[39m
-            [33mclass[39m=[32m"chakra-divider css-svjswr"[39m
-          [36m/>[39m
-          [36m<div[39m
-            [33mclass[39m=[32m"chakra-stack css-192ci12"[39m
-          [36m>[39m
-            [36m<br />[39m
-            [36m<br />[39m
-            [36m<div[39m
-              [33mclass[39m=[32m"css-gmuwbf"[39m
-            [36m>[39m
-              [0m [0m
-              [36m<h2[39m
-                [33mclass[39m=[32m"chakra-heading css-1dklj6k"[39m
-              [36m>[39m
-                [0mListings[0m
-              [36m</h2>[39m
-            [36m</div>[39m
-            [36m<br />[39m
-            [36m<div[39m
-              [33mclass[39m=[32m"css-gmuwbf"[39m
-            [36m>[39m
-              [36m<div[39m
-                [33mclass[39m=[32m"chakra-card css-1hs08yp"[39m
-              [36m>[39m
-                [36m<div[39m
-                  [33mclass[39m=[32m"chakra-card__body css-1idwstw"[39m
-                [36m>[39m
-                  [36m<img[39m
-                    [33malt[39m=[32m"Green double couch with wooden legs"[39m
-                    [33mclass[39m=[32m"chakra-image css-11jlpvc"[39m
-                    [33msrc[39m=[32m"https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"[39m
-                  [36m/>[39m
-                  [36m<div[39m
-                    [33mclass[39m=[32m"chakra-stack css-1gottk"[39m
-                  [36m>[39m
-                    [36m<h2[39m
-                      [33mclass[39m=[32m"chakra-heading css-18j379d"[39m
-                    [36m>[39m
-                      [0mLiving room Chair[0m
-                    [36m</h2>[39m
-                    [36m<p[39m
-                      [33mclass[39m=[32m"chakra-text css-6xix1i"[39m
-                    [36m>[39m
-                      [0mFREE SHIPPING[0m
-                    [36m</p>[39m
-                    [36m<p[39m
-                      [33mclass[39m=[32m"chakra-text css-0"[39m
-                    [36m>[39m
-                      [0mThis sofa is perfect for modern tropical spaces, baroque inspired spaces, earthy toned spaces and for people who love a chic design with a sprinkle of vintage design.[0m
-                    [36m</p>[39m
-                    [36m<p[39m
-                      [33mclass[39m=[32m"chakra-text css-nbdq8z"[39m
-                    [36m>[39m
-                      [0m$5[0m
-                    [36m</p>[39m
-                  [36m</div>[39m
-                [36m</div>[39m
-                [36m<hr[39m
-                  [33maria-orientation[39m=[32m"horizontal"[39m
-                  [33mclass[39m=[32m"chakra-divider css-svjswr"[39m
-                [36m/>[39m
-                [36m<div[39m
-                  [33mclass[39m=[32m"chakra-card__footer css-1a7q9t8"[39m
-                [36m>[39m
-                  [36m<div[39m
-                    [33mclass[39m=[32m"chakra-button__group css-18heqsi"[39m
-                    [33mdata-orientation[39m=[32m"horizontal"[39m
-                    [33mrole[39m=[32m"group"[39m
-                  [36m>[39m
-                    [36m<button[39m
-                      [33mclass[39m=[32m"chakra-button css-1tduvxh"[39m
-                      [33mtype[39m=[32m"button"[39m
-                    [36m>[39m
-                      [0mBuy now[0m
-                    [36m</button>[39m
-                    [36m<button[39m
-                      [33mclass[39m=[32m"chakra-button css-19nb8tt"[39m
-                      [33mtype[39m=[32m"button"[39m
-                    [36m>[39m
-                      [0mAdd to cart[0m
-                    [36m</button>[39m
-                  [36m</div>[39m
-                [36m</div>[39m
-              [36m</div>[39m
-            [36m</div>[39m
-          [36m</div>[39m
-        [36m</div>[39m
-        [36m<button[39m
-          [33mclass[39m=[32m"chakra-button css-1ufibi7"[39m
-          [33mtype[39m=[32m"button"[39m
-        [36m>[39m
-          [36m<b>[39m
-            [0mChat[0m
-          [36m</b>[39m
-          [0m  [0m
-          [36m<svg[39m
-            [33maria-hidden[39m=[32m"true"[39m
-            [33mclass[39m=[32m"svg-inline--fa fa-message "[39m
-            [33mcolor[39m=[32m"white"[39m
-            [33mdata-icon[39m=[32m"message"[39m
-            [33mdata-prefix[39m=[32m"fas"[39m
-            [33mfocusable[39m=[32m"false"[39m
-            [33mfont-size[39m=[32m"18px"[39m
-            [33mrole[39m=[32m"img"[39m
-            [33mviewBox[39m=[32m"0 0 512 512"[39m
-            [33mxmlns[39m=[32m"http://www.w3.org/2000/svg"[39m
-          [36m>[39m
-            [36m<path[39m
-              [33md[39m=[32m"M64 0C28.7 0 0 28.7 0 64V352c0 35.3 28.7 64 64 64h96v80c0 6.1 3.4 11.6 8.8 14.3s11.9 2.1 16.8-1.5L309.3 416H448c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H64z"[39m
-              [33mfill[39m=[32m"currentColor"[39m
-            [36m/>[39m
-          [36m</svg>[39m
-        [36m</button>[39m
-        [36m<footer[39m
-          [33mclass[39m=[32m"chakra-stack css-1oclma1"[39m
-        [36m>[39m
-          [36m<p[39m
-            [33mclass[39m=[32m"chakra-text css-79wky"[39m
-          [36m>[39m
-            [0mFooter (to-do)[0m
-          [36m</p>[39m
-        [36m</footer>[39m
-        [36m<span[39m
-          [33mhidden[39m=[32m""[39m
-          [33mid[39m=[32m"__chakra_env"[39m
-        [36m/>[39m
-      [36m</div>[39m
-      [36m<div[39m
-        [33mclass[39m=[32m"chakra-portal"[39m
-      [36m>[39m
-        [36m<div[39m
-          [33maria-label[39m=[32m"Notifications"[39m
-          [33maria-live[39m=[32m"polite"[39m
-          [33mid[39m=[32m"chakra-toast-manager-top"[39m
-          [33mrole[39m=[32m"region"[39m
-          [33mstyle[39m=[32m"position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column; margin: 0px auto;"[39m
-        [36m/>[39m
-        [36m<div[39m
-          [33maria-label[39m=[32m"Notifications"[39m
-          [33maria-live[39m=[32m"polite"[39m
-          [33mid[39m=[32m"chakra-toast-manager-top-left"[39m
-          [33mrole[39m=[32m"region"[39m
-          [33mstyle[39m=[32m"position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column;"[39m
-        [36m/>[39m
-        [36m<div[39m
-          [33maria-label[39m=[32m"Notifications"[39m
-          [33maria-live[39m=[32m"polite"[39m
-          [33mid[39m=[32m"chakra-toast-manager-top-right"[39m
-          [33mrole[39m=[32m"region"[39m
-          [33mstyle[39m=[32m"position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column;"[39m
-        [36m/>[39m
-        [36m<div[39m
-          [33maria-label[39m=[32m"Notifications"[39m
-          [33maria-live[39m=[32m"polite"[39m
-          [33mid[39m=[32m"chakra-toast-manager-bottom-left"[39m
-          [33mrole[39m=[32m"region"[39m
-          [33mstyle[39m=[32m"position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column;"[39m
-        [36m/>[39m
-        [36m<div[39m
-          [33maria-label[39m=[32m"Notifications"[39m
-          [33maria-live[39m=[32m"polite"[39m
-          [33mid[39m=[32m"chakra-toast-manager-bottom"[39m
-          [33mrole[39m=[32m"region"[39m
-          [33mstyle[39m=[32m"position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column; margin: 0px auto;"[39m
-        [36m/>[39m
-        [36m<div[39m
-          [33maria-label[39m=[32m"Notifications"[39m
-          [33maria-live[39m=[32m"polite"[39m
-          [33mid[39m=[32m"chakra-toast-manager-bottom-right"[39m
-          [33mrole[39m=[32m"region"[39m
-          [33mstyle[39m=[32m"position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column;"[39m
-        [36m/>[39m
-      [36m</div>[39m
-    [36m</body>[39m
+              [33mclass[39m=[32m"c...
 
        6 | test("renders learn react link", () => {
        7 |   render(<App />)
@@ -419,9 +294,9 @@ go away.[0m
 ------------------------|---------|----------|---------|---------|-------------------
 File                    | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 ------------------------|---------|----------|---------|---------|-------------------
-All files               |      30 |     2.38 |   22.85 |   30.27 |                   
- src                    |   22.78 |     2.38 |   26.92 |   23.07 |                   
-  App.tsx               |     100 |       50 |     100 |     100 | 14                
+All files               |   33.62 |     2.38 |   27.02 |   33.91 |                   
+ src                    |    26.5 |     2.38 |   32.14 |   26.82 |                   
+  App.tsx               |     100 |       50 |     100 |     100 | 25                
   ChatBot.tsx           |     100 |      100 |     100 |     100 |                   
   ColorModeSwitcher.tsx |     100 |      100 |     100 |     100 |                   
   Footer.tsx            |     100 |      100 |     100 |     100 |                   
@@ -432,16 +307,16 @@ All files               |      30 |     2.38 |   22.85 |   30.27 |
   serviceWorker.ts      |       0 |        0 |       0 |       0 | 13-143            
   test-utils.tsx        |     100 |      100 |     100 |     100 |                   
   theme.ts              |       0 |      100 |     100 |       0 | 5-11              
- src/pages              |   48.38 |      100 |   11.11 |   48.38 |                   
+ src/pages              |   51.51 |      100 |   11.11 |   51.51 |                   
   Account.tsx           |   33.33 |      100 |       0 |   33.33 | 9-11              
   Cart.tsx              |   33.33 |      100 |       0 |   33.33 | 9-11              
   Categories.tsx        |   33.33 |      100 |       0 |   33.33 | 9-11              
-  Home.tsx              |   76.92 |      100 |      25 |   76.92 | 28-32,92          
+  Home.tsx              |      80 |      100 |      25 |      80 | 31-35,96          
   Listings.tsx          |   16.66 |      100 |       0 |   16.66 | 18-23             
   Sell.tsx              |   33.33 |      100 |       0 |   33.33 | 9-11              
 ------------------------|---------|----------|---------|---------|-------------------
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        3.927 s
+Time:        4.065 s
 Ran all test suites.
