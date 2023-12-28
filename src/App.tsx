@@ -15,7 +15,7 @@ export const App = () => {
   return (
     <Router basename={baseUrl}>
       <Navbar />
-      <Box height="80px" w="100%" backgroundColor="brand.blue"></Box>
+      <Box height="80px" w="100%" backgroundColor="transparent"></Box>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/categories" element={<Categories />} />
