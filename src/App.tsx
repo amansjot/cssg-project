@@ -12,7 +12,7 @@ import Account from './pages/Account';
 
 export const App = () => {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Navbar />
       <Box height="80px" w="100%" backgroundColor="brand.blue"></Box>
       <Routes>
