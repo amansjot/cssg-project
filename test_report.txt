@@ -3,7 +3,7 @@
 > react-scripts test --coverage
 
 FAIL src/App.test.tsx
-  ✕ renders learn react link (287 ms)
+  ✕ renders learn react link (279 ms)
 
   ● renders learn react link
 
@@ -419,9 +419,9 @@ go away.[0m
 ------------------------|---------|----------|---------|---------|-------------------
 File                    | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 ------------------------|---------|----------|---------|---------|-------------------
-All files               |   29.35 |        0 |   22.85 |   29.62 |                   
- src                    |   21.79 |        0 |   26.92 |   22.07 |                   
-  App.tsx               |     100 |      100 |     100 |     100 |                   
+All files               |      30 |     2.38 |   22.85 |   30.27 |                   
+ src                    |   22.78 |     2.38 |   26.92 |   23.07 |                   
+  App.tsx               |     100 |       50 |     100 |     100 | 14                
   ChatBot.tsx           |     100 |      100 |     100 |     100 |                   
   ColorModeSwitcher.tsx |     100 |      100 |     100 |     100 |                   
   Footer.tsx            |     100 |      100 |     100 |     100 |                   
@@ -443,5 +443,5 @@ All files               |   29.35 |        0 |   22.85 |   29.62 |
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        3.838 s
+Time:        3.821 s
 Ran all test suites.
