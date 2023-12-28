@@ -15,12 +15,15 @@ import {
   CardFooter,
   Center,
   Divider,
-  Stack
+  Stack,
+  Box,
 } from "@chakra-ui/react";
+import { Link, useNavigate } from "react-router-dom";
 import { Search2Icon } from "@chakra-ui/icons";
 
 const Home = () => {
   const [searchQuery, setSearchQuery] = useState<string>("");
+  const navigate = useNavigate();
 
   const handleSearchQueryChange = (
     event: React.ChangeEvent<HTMLInputElement>
@@ -29,7 +32,7 @@ const Home = () => {
   };
 
   function handleSearch() {
-    alert("You inputted: " + searchQuery);
+    navigate("/listings?q=" + searchQuery);
   }
 
   const mainbg = useColorModeValue("white", "gray.800");
@@ -38,6 +41,7 @@ const Home = () => {
   const listingbg = useColorModeValue("blue.50", "blue.800");
   const listingtxt = useColorModeValue("black", "white");
   const listingborder = useColorModeValue("blue.600", "blue.900");
+  const linkcolor = useColorModeValue("blue.500", "blue.300");
 
   return (
     <div>
@@ -59,7 +63,7 @@ const Home = () => {
             UD Buy & Sell
           </Heading>
           <Heading size="md" color="grey">
-            by CS for Social Good
+            by CS + Social Good
           </Heading>
         </Container>
 
@@ -98,18 +102,74 @@ const Home = () => {
               }}
             />
           </HStack>
+          <HStack
+            w="100%"
+            maxW="400px"
+            color={linkcolor}
+            margin="10px auto 0 auto"
+          >
+            <Text margin="0 auto">
+              <Link to="/listings?q=books">
+                <Search2Icon fontSize="12px" mt="-1" /> books
+              </Link>{" "}
+            </Text>
+            <Text margin="0 auto">
+              <Link to="/listings?q=couches">
+                <Search2Icon fontSize="12px" mt="-1" /> couches
+              </Link>
+            </Text>{" "}
+            <Text margin="0 auto">
+              {" "}
+              <Link to="/listings?q=mirrors">
+                <Search2Icon fontSize="12px" mt="-1" /> mirrors
+              </Link>
+            </Text>
+          </HStack>
         </Container>
       </Container>
-
       <br />
-      <Divider></Divider>
 
-      <Stack backgroundColor={greybg} pb="60px">
+      <Box backgroundColor={greybg} p="50px">
+        <Center>
+          <Heading size="xl">Categories</Heading>
+        </Center>
+        <Center mt="8">
+          <ButtonGroup fontSize="3xl">
+            <Button p="25px" m="3" fontSize="inherit">
+              <Link to="/categories">All ♾️</Link>
+            </Button>
+            <Button p="25px" m="3" fontSize="inherit">
+              <Link to="/categories?c=school">School 📚</Link>
+            </Button>
+            <Button p="25px" m="3" fontSize="inherit">
+              <Link to="/categories?c=furniture">Furniture 🛌</Link>
+            </Button>
+            <Button p="25px" m="3" fontSize="inherit">
+              <Link to="/categories?c=housing">Housing 🏠</Link>
+            </Button>
+          </ButtonGroup>
+        </Center>
+        <Center>
+          <ButtonGroup fontSize="3xl">
+            <Button p="25px" m="3" fontSize="inherit">
+              <Link to="/categories?c=transportation">Transportation 🚲</Link>
+            </Button>
+            <Button p="25px" m="3" fontSize="inherit">
+              <Link to="/categories?c=misc">Miscellaneous 📸</Link>
+            </Button>
+            <Button p="25px" m="3" fontSize="inherit">
+              <Link to="/categories?c=misc">Electronics 🎮</Link>
+            </Button>
+          </ButtonGroup>
+        </Center>
+      </Box>
+
+      <Stack pb="60px">
         <br />
         <br />
         <Center>
           {" "}
-          <Heading size="xl">Listings</Heading>
+          <Heading size="xl">Recent Listings</Heading>
         </Center>
         <br />
         <Center>
@@ -154,7 +214,6 @@ const Home = () => {
           </Card>
         </Center>
       </Stack>
-
     </div>
   );
 };
