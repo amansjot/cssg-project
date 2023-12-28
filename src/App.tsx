@@ -11,8 +11,9 @@ import Cart from './pages/Cart';
 import Account from './pages/Account';
 
 export const App = () => {
+  const baseUrl = process.env.NODE_ENV === 'production' ? '/cssg-project/' : '/';
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router basename={baseUrl}>
       <Navbar />
       <Box height="80px" w="100%" backgroundColor="brand.blue"></Box>
       <Routes>
