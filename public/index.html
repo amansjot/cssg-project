@@ -30,10 +30,7 @@
     <div id="root"></div>
 
     <script>
-        if (sessionStorage.redirect) {
-            delete sessionStorage.redirect;
-            history.replaceState(null, null, sessionStorage.redirect);
-        }
+        sessionStorage.redirect = location.href;
     </script>
 </body>
 
