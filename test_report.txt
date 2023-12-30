@@ -84,7 +84,7 @@
       at runCLI (node_modules/react-scripts/node_modules/@jest/core/build/cli/index.js:173:3)
 
 FAIL src/App.test.tsx
-  ✕ renders learn react link (335 ms)
+  ✕ renders learn react link (359 ms)
 
   ● renders learn react link
 
@@ -107,21 +107,21 @@ FAIL src/App.test.tsx
               [36m<img[39m
                 [33malt[39m=[32m"CS+SG logo"[39m
                 [33mclass[39m=[32m"chakra-image css-sk9oah"[39m
-                [33msrc[39m=[32m"logo-color.svg"[39m
+                [33msrc[39m=[32m"/logo-color.svg"[39m
               [36m/>[39m
             [36m</a>[39m
             [36m<a[39m
               [33mhref[39m=[32m"/"[39m
             [36m>[39m
               [36m<h2[39m
-                [33mclass[39m=[32m"chakra-heading css-17sgvs9"[39m
+                [33mclass[39m=[32m"chakra-heading css-wtoisd"[39m
               [36m>[39m
                 [0mUD Buy & Sell[0m
               [36m</h2>[39m
             [36m</a>[39m
           [36m</div>[39m
           [36m<div[39m
-            [33mclass[39m=[32m"chakra-stack css-lgvjn3"[39m
+            [33mclass[39m=[32m"chakra-stack css-1u7axoi"[39m
           [36m>[39m
             [36m<a[39m
               [33mhref[39m=[32m"/categories"[39m
@@ -150,6 +150,20 @@ FAIL src/App.test.tsx
                 [0mSell an Item[0m
               [36m</p>[39m
             [36m</a>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"css-cuplk0"[39m
+          [36m>[39m
+            [36m<svg[39m
+              [33mclass[39m=[32m"chakra-icon css-onkibi"[39m
+              [33mfocusable[39m=[32m"false"[39m
+              [33mviewBox[39m=[32m"0 0 24 24"[39m
+            [36m>[39m
+              [36m<path[39m
+                [33md[39m=[32m"M 3 5 A 1.0001 1.0001 0 1 0 3 7 L 21 7 A 1.0001 1.0001 0 1 0 21 5 L 3 5 z M 3 11 A 1.0001 1.0001 0 1 0 3 13 L 21 13 A 1.0001 1.0001 0 1 0 21 11 L 3 11 z M 3 17 A 1.0001 1.0001 0 1 0 3 19 L 21 19 A 1.0001 1.0001 0 1 0 21 17 L 3 17 z"[39m
+                [33mfill[39m=[32m"currentColor"[39m
+              [36m/>[39m
+            [36m</svg>[39m
           [36m</div>[39m
           [36m<div[39m
             [33mclass[39m=[32m"css-hfuuju"[39m
@@ -240,26 +254,7 @@ FAIL src/App.test.tsx
             [33mclass[39m=[32m"chakra-container css-193qvio"[39m
           [36m>[39m
             [36m<div[39m
-              [33mclass[39m=[32m"chakra-container css-ugpui4"[39m
-            [36m>[39m
-              [36m<img[39m
-                [33malt[39m=[32m"CS+SG logo"[39m
-                [33mclass[39m=[32m"chakra-image css-6evhbc"[39m
-                [33msrc[39m=[32m"logo-color.svg"[39m
-              [36m/>[39m
-              [36m<h2[39m
-                [33mclass[39m=[32m"chakra-heading css-13yglpk"[39m
-              [36m>[39m
-                [0mUD Buy & Sell[0m
-              [36m</h2>[39m
-              [36m<h2[39m
-                [33mclass[39m=[32m"chakra-heading css-1ol3kib"[39m
-              [36m>[39m
-                [0mby CS + Social Good[0m
-              [36m</h2>[39m
-            [36m</div>[39m
-            [36m<div[39m
-              [33mclass[39m=[32m"c...
+              [33mclass[39m=...
 
        6 | test("renders learn react link", () => {
        7 |   render(<App />)
@@ -294,14 +289,15 @@ go away.[0m
 ------------------------|---------|----------|---------|---------|-------------------
 File                    | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 ------------------------|---------|----------|---------|---------|-------------------
-All files               |   33.62 |     2.38 |   27.02 |   33.91 |                   
- src                    |    26.5 |     2.38 |   32.14 |   26.82 |                   
+All files               |   35.53 |     6.52 |   26.31 |   36.13 |                   
+ src                    |   29.54 |     6.52 |   31.03 |   30.23 |                   
   App.tsx               |     100 |       50 |     100 |     100 | 25                
   ChatBot.tsx           |     100 |      100 |     100 |     100 |                   
   ColorModeSwitcher.tsx |     100 |      100 |     100 |     100 |                   
   Footer.tsx            |     100 |      100 |     100 |     100 |                   
   Logo.tsx              |       0 |        0 |       0 |       0 | 11-23             
-  Navbar.tsx            |     100 |      100 |     100 |     100 |                   
+  Navbar.tsx            |      80 |       50 |      50 |     100 | 41-102            
+  config.js             |     100 |      100 |     100 |     100 |                   
   index.tsx             |       0 |        0 |     100 |       0 | 9-30              
   reportWebVitals.ts    |       0 |        0 |       0 |       0 | 3-10              
   serviceWorker.ts      |       0 |        0 |       0 |       0 | 13-143            
@@ -311,12 +307,12 @@ All files               |   33.62 |     2.38 |   27.02 |   33.91 |
   Account.tsx           |   33.33 |      100 |       0 |   33.33 | 9-11              
   Cart.tsx              |   33.33 |      100 |       0 |   33.33 | 9-11              
   Categories.tsx        |   33.33 |      100 |       0 |   33.33 | 9-11              
-  Home.tsx              |      80 |      100 |      25 |      80 | 31-35,96          
+  Home.tsx              |      80 |      100 |      25 |      80 | 33-37,100         
   Listings.tsx          |   16.66 |      100 |       0 |   16.66 | 18-23             
   Sell.tsx              |   33.33 |      100 |       0 |   33.33 | 9-11              
 ------------------------|---------|----------|---------|---------|-------------------
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        3.902 s
+Time:        4.033 s
 Ran all test suites.
