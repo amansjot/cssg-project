@@ -38,7 +38,7 @@ export const Navbar = () => {
           <Image src={config.logo} w="50px" alt="CS+SG logo" mr="2" />
         </Link>
         <Link to="/">
-          <Heading display={isOpen ? "block" : "none"} fontSize="21px">
+          <Heading display={{ base: isOpen ? "block" : "none", md: "block" }} fontSize="21px">
             {config.name}
           </Heading>
         </Link>
