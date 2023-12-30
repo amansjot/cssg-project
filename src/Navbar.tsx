@@ -11,8 +11,9 @@ import {
 } from "@chakra-ui/react";
 import { faCartShopping, faUser } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { ColorModeSwitcher } from "./ColorModeSwitcher";
 import { CloseIcon, HamburgerIcon } from "@chakra-ui/icons";
+import { ColorModeSwitcher } from "./ColorModeSwitcher";
+import config from './config';
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -34,11 +35,11 @@ export const Navbar = () => {
       {/* logo */}
       <HStack position="absolute" left="20px">
         <Link to="/">
-          <Image src="logo-color.svg" w="50px" alt="CS+SG logo" mr="2" />
+          <Image src={config.logo} w="50px" alt="CS+SG logo" mr="2" />
         </Link>
         <Link to="/">
           <Heading display={isOpen ? "block" : "none"} fontSize="21px">
-            UD Buy & Sell
+            {config.name}
           </Heading>
         </Link>
       </HStack>

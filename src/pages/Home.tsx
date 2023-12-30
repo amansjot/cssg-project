@@ -21,6 +21,7 @@ import {
 } from "@chakra-ui/react";
 import { Link, useNavigate } from "react-router-dom";
 import { Search2Icon } from "@chakra-ui/icons";
+import config from '../config';
 
 const Home = () => {
   const [searchQuery, setSearchQuery] = useState<string>("");
@@ -54,14 +55,14 @@ const Home = () => {
       >
         <Container maxW="100%" mb="10">
           <Image
-            src="logo-color.svg"
+            src={config.logo}
             w="100px"
             h="100px"
             m="0 auto"
             alt="CS+SG logo"
           />
           <Heading mb="2" fontSize="5xl">
-            UD Buy & Sell
+            {config.name}
           </Heading>
           <Heading size="md" color="grey">
             by CS + Social Good
