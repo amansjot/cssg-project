@@ -84,7 +84,7 @@
       at runCLI (node_modules/react-scripts/node_modules/@jest/core/build/cli/index.js:173:3)
 
 FAIL src/App.test.tsx
-  ✕ renders learn react link (332 ms)
+  ✕ renders learn react link (355 ms)
 
   ● renders learn react link
 
@@ -114,7 +114,7 @@ FAIL src/App.test.tsx
               [33mhref[39m=[32m"/"[39m
             [36m>[39m
               [36m<h2[39m
-                [33mclass[39m=[32m"chakra-heading css-wtoisd"[39m
+                [33mclass[39m=[32m"chakra-heading css-19gbydx"[39m
               [36m>[39m
                 [0mUD Buy & Sell[0m
               [36m</h2>[39m
@@ -254,7 +254,7 @@ FAIL src/App.test.tsx
             [33mclass[39m=[32m"chakra-container css-193qvio"[39m
           [36m>[39m
             [36m<div[39m
-              [33mclass[39m=...
+              [33mclass[39m=...
 
        6 | test("renders learn react link", () => {
        7 |   render(<App />)
@@ -289,7 +289,7 @@ go away.[0m
 ------------------------|---------|----------|---------|---------|-------------------
 File                    | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 ------------------------|---------|----------|---------|---------|-------------------
-All files               |   35.53 |     6.52 |   26.31 |   36.13 |                   
+All files               |   33.85 |     5.76 |   26.31 |   34.67 |                   
  src                    |   29.54 |     6.52 |   31.03 |   30.23 |                   
   App.tsx               |     100 |       50 |     100 |     100 | 25                
   ChatBot.tsx           |     100 |      100 |     100 |     100 |                   
@@ -303,16 +303,16 @@ All files               |   35.53 |     6.52 |   26.31 |   36.13 |
   serviceWorker.ts      |       0 |        0 |       0 |       0 | 13-143            
   test-utils.tsx        |     100 |      100 |     100 |     100 |                   
   theme.ts              |       0 |      100 |     100 |       0 | 5-11              
- src/pages              |   51.51 |      100 |   11.11 |   51.51 |                   
+ src/pages              |   43.58 |        0 |   11.11 |   44.73 |                   
   Account.tsx           |   33.33 |      100 |       0 |   33.33 | 9-11              
   Cart.tsx              |   33.33 |      100 |       0 |   33.33 | 9-11              
-  Categories.tsx        |   33.33 |      100 |       0 |   33.33 | 9-11              
+  Categories.tsx        |   14.28 |        0 |       0 |   16.66 | 10-16             
   Home.tsx              |      80 |      100 |      25 |      80 | 33-37,100         
-  Listings.tsx          |   16.66 |      100 |       0 |   16.66 | 18-23             
+  Listings.tsx          |    12.5 |        0 |       0 |    12.5 | 19-27             
   Sell.tsx              |   33.33 |      100 |       0 |   33.33 | 9-11              
 ------------------------|---------|----------|---------|---------|-------------------
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        3.998 s
+Time:        4.077 s
 Ran all test suites.
