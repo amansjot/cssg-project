@@ -17,9 +17,11 @@ import {
   Divider,
   Stack,
   Box,
+  Wrap,
 } from "@chakra-ui/react";
 import { Link, useNavigate } from "react-router-dom";
 import { Search2Icon } from "@chakra-ui/icons";
+import config from '../config';
 
 const Home = () => {
   const [searchQuery, setSearchQuery] = useState<string>("");
@@ -36,8 +38,8 @@ const Home = () => {
   }
 
   const mainbg = useColorModeValue("white", "gray.800");
-  const inputbg = useColorModeValue("white", "gray.700");
-  const greybg = useColorModeValue("gray.300", "gray.600");
+  const inputbg = useColorModeValue("white", "gray.750");
+  const greybg = useColorModeValue("gray.300", "gray.700");
   const listingbg = useColorModeValue("blue.50", "blue.800");
   const listingtxt = useColorModeValue("black", "white");
   const listingborder = useColorModeValue("blue.600", "blue.900");
@@ -53,14 +55,14 @@ const Home = () => {
       >
         <Container maxW="100%" mb="10">
           <Image
-            src="logo-color.svg"
+            src={config.logo}
             w="100px"
             h="100px"
             m="0 auto"
             alt="CS+SG logo"
           />
           <Heading mb="2" fontSize="5xl">
-            UD Buy & Sell
+            {config.name}
           </Heading>
           <Heading size="md" color="grey">
             by CS + Social Good
@@ -68,36 +70,38 @@ const Home = () => {
         </Container>
 
         <Container maxW="100%">
-          <HStack w="100%" maxW="500px" margin="0 auto" spacing="0">
+          <HStack w="100%" maxW="600px" margin="0 auto" spacing="0">
             <Input
+              autoFocus
               size="lg"
               name="search"
-              height="50px"
-              borderColor="#00539f"
+              height="60px"
+              borderColor="brand.blue"
+              borderWidth="2px"
+              fontSize="20px"
               borderRadius="7px 0 0 7px"
               backgroundColor={inputbg}
-              // color="black"
               placeholder="What would you like to find?"
               onChange={handleSearchQueryChange}
               _hover={{
-                borderColor: "#00539f",
+                borderColor: "brand.blue",
                 transition: "0.3s ease",
               }}
             />
             <IconButton
               borderRadius="0 7px 7px 0"
-              backgroundColor="#00539f"
+              backgroundColor="brand.blue"
               color="white"
-              border="1px solid #00539f"
+              border="2px solid brand.blue"
               ml="-1px"
-              h="50px"
-              w="50px"
+              h="60px"
+              w="60px"
               aria-label="Search catalog"
               onClick={() => handleSearch()}
-              icon={<Search2Icon />}
+              icon={<Search2Icon fontSize="22px" />}
               _hover={{
-                bg: "#00539f",
-                color: "#ffd200",
+                bg: "brand.blue",
+                color: "brand.yellow",
                 transition: "0.3s ease",
               }}
             />
@@ -106,7 +110,7 @@ const Home = () => {
             w="100%"
             maxW="400px"
             color={linkcolor}
-            margin="10px auto 0 auto"
+            margin="12px auto 0 auto"
           >
             <Text margin="0 auto">
               <Link to="/listings?q=books">
@@ -133,38 +137,32 @@ const Home = () => {
         <Center>
           <Heading size="xl">Categories</Heading>
         </Center>
-        <Center mt="8">
-          <ButtonGroup fontSize="3xl">
-            <Button p="25px" m="3" fontSize="inherit">
-              <Link to="/categories">All ♾️</Link>
-            </Button>
-            <Button p="25px" m="3" fontSize="inherit">
-              <Link to="/categories?c=school">School 📚</Link>
-            </Button>
-            <Button p="25px" m="3" fontSize="inherit">
-              <Link to="/categories?c=furniture">Furniture 🛌</Link>
-            </Button>
-            <Button p="25px" m="3" fontSize="inherit">
-              <Link to="/categories?c=housing">Housing 🏠</Link>
-            </Button>
-          </ButtonGroup>
-        </Center>
-        <Center>
-          <ButtonGroup fontSize="3xl">
-            <Button p="25px" m="3" fontSize="inherit">
-              <Link to="/categories?c=transportation">Transportation 🚲</Link>
-            </Button>
-            <Button p="25px" m="3" fontSize="inherit">
-              <Link to="/categories?c=misc">Miscellaneous 📸</Link>
-            </Button>
-            <Button p="25px" m="3" fontSize="inherit">
-              <Link to="/categories?c=misc">Electronics 🎮</Link>
-            </Button>
-          </ButtonGroup>
-        </Center>
+        <Wrap m="0 auto" width="900px" maxW="90%" fontSize="3xl" mt="32px">
+          <Button p="30px" m="8px auto" fontSize="inherit">
+            <Link to="/categories">All ♾️</Link>
+          </Button>
+          <Button p="30px" m="8px auto" fontSize="inherit">
+            <Link to="/categories?c=school">School 📚</Link>
+          </Button>
+          <Button p="30px" m="8px auto" fontSize="inherit">
+            <Link to="/categories?c=furniture">Furniture 🛌</Link>
+          </Button>
+          <Button p="30px" m="8px auto" fontSize="inherit">
+            <Link to="/categories?c=housing">Housing 🏠</Link>
+          </Button>
+          <Button p="30px" m="8px auto" fontSize="inherit">
+            <Link to="/categories?c=transportation">Transportation 🚲</Link>
+          </Button>
+          <Button p="30px" m="8px auto" fontSize="inherit">
+            <Link to="/categories?c=electronics">Electronics 🎮</Link>
+          </Button>
+          <Button p="30px" m="8px auto" fontSize="inherit">
+            <Link to="/categories?c=misc">Miscellaneous 📸</Link>
+          </Button>
+        </Wrap>
       </Box>
 
-      <Stack pb="60px">
+      <Stack p="10px" pb="60px">
         <br />
         <br />
         <Center>

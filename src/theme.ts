@@ -13,6 +13,7 @@ const theme = extendTheme({
   colors: {
     brand: {
       "blue": "#00539f",
+      "yellow": "#ffd200",
     },
   },
 });

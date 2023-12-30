@@ -30,13 +30,13 @@
     <div id="root"></div>
 
     <script>
-        (function() {
+        if (process.env.NODE_ENV === 'production') {
             const redirect = sessionStorage.redirect;
             delete sessionStorage.redirect;
             if (redirect && redirect !== location.pathname) {
                 history.replaceState(null, null, redirect);
             }
-        })();
+        }
     </script>
 
 </body>
