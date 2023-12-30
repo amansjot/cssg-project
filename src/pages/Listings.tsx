@@ -12,6 +12,7 @@ import {
   Divider,
   Stack,
 } from "@chakra-ui/react";
+import { useSearchParams } from 'react-router-dom';
 
 const Listings = () => {
 
@@ -20,12 +21,15 @@ const Listings = () => {
   const listingtxt = useColorModeValue("black", "white");
   const listingborder = useColorModeValue("blue.600", "blue.900");
 
+  const [searchParams] = useSearchParams();
+  const query = searchParams.get('q');
+
   return (
     <div>
       <Stack backgroundColor={mainbg} py="60px">
         <Center>
           {" "}
-          <Heading size="xl">Listings</Heading>
+          <Heading size="xl">{query ? `Listings for "${query}"` : "All Listings"}</Heading>
         </Center>
         <br />
         <Center>

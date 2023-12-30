@@ -157,7 +157,7 @@ const Home = () => {
             <Link to="/categories?c=electronics">Electronics 🎮</Link>
           </Button>
           <Button p="30px" m="8px auto" fontSize="inherit">
-            <Link to="/categories?c=misc">Miscellaneous 📸</Link>
+            <Link to="/categories?c=miscellaneous">Miscellaneous 📸</Link>
           </Button>
         </Wrap>
       </Box>
