@@ -72,7 +72,6 @@ const Home = () => {
         <Container maxW="100%">
           <HStack w="100%" maxW="600px" margin="0 auto" spacing="0">
             <Input
-              autoFocus
               size="lg"
               name="search"
               height="60px"
@@ -162,7 +161,7 @@ const Home = () => {
         </Wrap>
       </Box>
 
-      <Stack p="10px" pb="60px">
+      <Stack pb="60px">
         <br />
         <br />
         <Center>
@@ -178,6 +177,7 @@ const Home = () => {
             borderWidth="1px"
             borderStyle="solid"
             borderColor={listingborder}
+            m="10px"
           >
             <CardBody>
               <Image

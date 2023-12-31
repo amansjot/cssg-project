@@ -79,7 +79,7 @@ export const Navbar = () => {
         <Link to="/listings" onClick={closeNav}>
           <Text
             borderBottom="2px solid transparent"
-            pb={{ base: "20px", lg: "0" }}
+            pb={{ base: "20px", lg: "4px" }}
             mb={{ base: "0", lg: "-4px" }}
             pt={{ base: "20px", lg: "0" }}
             fontSize="20px"
@@ -96,7 +96,7 @@ export const Navbar = () => {
         <Link to="/sell" onClick={closeNav}>
           <Text
             borderBottom="2px solid transparent"
-            pb={{ base: "20px", lg: "0" }}
+            pb={{ base: "20px", lg: "4px" }}
             mb={{ base: "0", lg: "-4px" }}
             pt={{ base: "20px", lg: "0" }}
             fontSize="20px"
