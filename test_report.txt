@@ -84,7 +84,7 @@
       at runCLI (node_modules/react-scripts/node_modules/@jest/core/build/cli/index.js:173:3)
 
 FAIL src/App.test.tsx
-  ✕ renders learn react link (355 ms)
+  ✕ renders learn react link (365 ms)
 
   ● renders learn react link
 
@@ -99,7 +99,7 @@ FAIL src/App.test.tsx
           [33mclass[39m=[32m"chakra-stack css-1ufnxgh"[39m
         [36m>[39m
           [36m<div[39m
-            [33mclass[39m=[32m"chakra-stack css-12vdasz"[39m
+            [33mclass[39m=[32m"chakra-stack css-1g63ymn"[39m
           [36m>[39m
             [36m<a[39m
               [33mhref[39m=[32m"/"[39m
@@ -114,20 +114,20 @@ FAIL src/App.test.tsx
               [33mhref[39m=[32m"/"[39m
             [36m>[39m
               [36m<h2[39m
-                [33mclass[39m=[32m"chakra-heading css-19gbydx"[39m
+                [33mclass[39m=[32m"chakra-heading css-xi05mb"[39m
               [36m>[39m
                 [0mUD Buy & Sell[0m
               [36m</h2>[39m
             [36m</a>[39m
           [36m</div>[39m
           [36m<div[39m
-            [33mclass[39m=[32m"chakra-stack css-1u7axoi"[39m
+            [33mclass[39m=[32m"chakra-stack css-5r0l9v"[39m
           [36m>[39m
             [36m<a[39m
               [33mhref[39m=[32m"/categories"[39m
             [36m>[39m
               [36m<p[39m
-                [33mclass[39m=[32m"chakra-text css-ocmm0j"[39m
+                [33mclass[39m=[32m"chakra-text css-t0lncd"[39m
               [36m>[39m
                 [0mCategories[0m
               [36m</p>[39m
@@ -136,7 +136,7 @@ FAIL src/App.test.tsx
               [33mhref[39m=[32m"/listings"[39m
             [36m>[39m
               [36m<p[39m
-                [33mclass[39m=[32m"chakra-text css-ocmm0j"[39m
+                [33mclass[39m=[32m"chakra-text css-1pccokb"[39m
               [36m>[39m
                 [0mListings[0m
               [36m</p>[39m
@@ -145,25 +145,11 @@ FAIL src/App.test.tsx
               [33mhref[39m=[32m"/sell"[39m
             [36m>[39m
               [36m<p[39m
-                [33mclass[39m=[32m"chakra-text css-ocmm0j"[39m
+                [33mclass[39m=[32m"chakra-text css-1pccokb"[39m
               [36m>[39m
                 [0mSell an Item[0m
               [36m</p>[39m
             [36m</a>[39m
-          [36m</div>[39m
-          [36m<div[39m
-            [33mclass[39m=[32m"css-cuplk0"[39m
-          [36m>[39m
-            [36m<svg[39m
-              [33mclass[39m=[32m"chakra-icon css-onkibi"[39m
-              [33mfocusable[39m=[32m"false"[39m
-              [33mviewBox[39m=[32m"0 0 24 24"[39m
-            [36m>[39m
-              [36m<path[39m
-                [33md[39m=[32m"M 3 5 A 1.0001 1.0001 0 1 0 3 7 L 21 7 A 1.0001 1.0001 0 1 0 21 5 L 3 5 z M 3 11 A 1.0001 1.0001 0 1 0 3 13 L 21 13 A 1.0001 1.0001 0 1 0 21 11 L 3 11 z M 3 17 A 1.0001 1.0001 0 1 0 3 19 L 21 19 A 1.0001 1.0001 0 1 0 21 17 L 3 17 z"[39m
-                [33mfill[39m=[32m"currentColor"[39m
-              [36m/>[39m
-            [36m</svg>[39m
           [36m</div>[39m
           [36m<div[39m
             [33mclass[39m=[32m"css-hfuuju"[39m
@@ -244,17 +230,26 @@ FAIL src/App.test.tsx
                 [36m</svg>[39m
               [36m</button>[39m
             [36m</a>[39m
-          [36m</div>[39m
-        [36m</nav>[39m
-        [36m<div[39m
-          [33mclass[39m=[32m"css-1trj4nh"[39m
-        [36m/>[39m
-        [36m<div>[39m
-          [36m<div[39m
-            [33mclass[39m=[32m"chakra-container css-193qvio"[39m
-          [36m>[39m
             [36m<div[39m
-              [33mclass[39m=...
+              [33mclass[39m=[32m"css-16q9pr7"[39m
+            [36m>[39m
+              [36m<button[39m
+                [33maria-label[39m=[32m"Cart"[39m
+                [33mclass[39m=[32m"chakra-button css-1jlmy26"[39m
+                [33mtype[39m=[32m"button"[39m
+              [36m>[39m
+                [36m<svg[39m
+                  [33maria-hidden[39m=[32m"true"[39m
+                  [33mclass[39m=[32m"chakra-icon css-1l8slwd"[39m
+                  [33mfocusable[39m=[32m"false"[39m
+                  [33mviewBox[39m=[32m"0 0 24 24"[39m
+                [36m>[39m
+                  [36m<path[39m
+                    [33md[39m=[32m"M 3 5 A 1.0001 1.0001 0 1 0 3 7 L 21 7 A 1.0001 1.0001 0 1 0 21 5 L 3 5 z M 3 11 A 1.0001 1.0001 0 1 0 3 13 L 21 13 A 1.0001 1.0001 0 1 0 21 11 L 3 11 z M 3 17 A 1.0001 1.0001 0 1 0 3 19 L 21 19 A 1.0001 1.0001 0 1 0 21 17 L 3 17 z"[39m
+                    [33mfill[39m=[32m"currentColor"[39m
+                  [36m/>[39m
+                [36m</svg>[39m
+             ...
 
        6 | test("renders learn react link", () => {
        7 |   render(<App />)
@@ -274,29 +269,17 @@ FAIL src/App.test.tsx
       at _run10000 (node_modules/react-scripts/node_modules/@jest/core/build/cli/index.js:320:7)
       at runCLI (node_modules/react-scripts/node_modules/@jest/core/build/cli/index.js:173:3)
 
-[0;33mOne of your dependencies, babel-preset-react-app, is importing the
-"@babel/plugin-proposal-private-property-in-object" package without
-declaring it in its dependencies. This is currently working because
-"@babel/plugin-proposal-private-property-in-object" is already in your
-node_modules folder for unrelated reasons, but it [1mmay break at any time[0;33m.
-
-babel-preset-react-app is part of the create-react-app project, [1mwhich
-is not maintianed anymore[0;33m. It is thus unlikely that this bug will
-ever be fixed. Add "@babel/plugin-proposal-private-property-in-object" to
-your devDependencies to work around this error. This will make this message
-go away.[0m
-  
 ------------------------|---------|----------|---------|---------|-------------------
 File                    | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 ------------------------|---------|----------|---------|---------|-------------------
-All files               |   33.85 |     5.76 |   26.31 |   34.67 |                   
- src                    |   29.54 |     6.52 |   31.03 |   30.23 |                   
+All files               |    34.1 |     5.76 |   25.64 |    35.2 |                   
+ src                    |      30 |     6.52 |      30 |   31.03 |                   
   App.tsx               |     100 |       50 |     100 |     100 | 25                
   ChatBot.tsx           |     100 |      100 |     100 |     100 |                   
   ColorModeSwitcher.tsx |     100 |      100 |     100 |     100 |                   
   Footer.tsx            |     100 |      100 |     100 |     100 |                   
   Logo.tsx              |       0 |        0 |       0 |       0 | 11-23             
-  Navbar.tsx            |      80 |       50 |      50 |     100 | 41-102            
+  Navbar.tsx            |   71.42 |       50 |   33.33 |     100 | 58-173            
   config.js             |     100 |      100 |     100 |     100 |                   
   index.tsx             |       0 |        0 |     100 |       0 | 9-30              
   reportWebVitals.ts    |       0 |        0 |       0 |       0 | 3-10              
@@ -314,5 +297,5 @@ All files               |   33.85 |     5.76 |   26.31 |   34.67 |
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        4.08 s
+Time:        3.657 s
 Ran all test suites.
