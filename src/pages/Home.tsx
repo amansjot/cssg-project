@@ -201,7 +201,7 @@ const Home = () => {
             <Divider />
             <CardFooter>
               <ButtonGroup spacing="2">
-                <Button variant="solid" colorScheme="blue">
+                <Button variant="solid" borderColor="brand.blue" backgroundColor="brand.blue" color="white">
                   Buy now
                 </Button>
                 <Button variant="ghost" colorScheme="blue">

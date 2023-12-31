@@ -8,16 +8,18 @@ import {
   IconButton,
   Text,
   Box,
+  Stack,
 } from "@chakra-ui/react";
 import { faCartShopping, faUser } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { CloseIcon, HamburgerIcon } from "@chakra-ui/icons";
 import { ColorModeSwitcher } from "./ColorModeSwitcher";
-import config from './config';
+import config from "./config";
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
-  const toggle = () => setIsOpen(!isOpen);
+  const toggleNav = () => setIsOpen(!isOpen);
+  const closeNav = () => setIsOpen(false);
 
   return (
     <HStack
@@ -33,77 +35,89 @@ export const Navbar = () => {
       height="80px"
     >
       {/* logo */}
-      <HStack position="absolute" left="20px">
-        <Link to="/">
+      <HStack position="absolute" left="30px">
+        <Link to="/" onClick={closeNav}>
           <Image src={config.logo} w="50px" alt="CS+SG logo" mr="2" />
         </Link>
         <Link to="/">
-          <Heading display={{ base: isOpen ? "block" : "none", md: "block" }} fontSize="21px">
+          <Heading display={{ base: "none", sm: "block" }} fontSize="21px">
             {config.name}
           </Heading>
         </Link>
       </HStack>
 
       {/* links */}
-      <HStack
+      <Stack
         fontWeight="bold"
-        spacing="70px"
+        gap={["0", "0", "70px", "70px"]}
+        mt={{ base: "300px", lg: "0" }}
         align="center"
         justify={["center", "center", "center", "center"]}
-        direction={["column", "row", "row", "row"]}
+        direction={["column", "column", "row", "row"]}
         width="full"
-              >
-        <Link to="/categories">
+        visibility={{ base: isOpen ? "visible" : "hidden", lg: "visible" }}
+        position={{ base: "absolute", lg: "static" }}
+        bg="brand.blue"
+      >
+        <Link to="/categories" onClick={closeNav}>
           <Text
             borderBottom="2px solid transparent"
-            pb="4px"
+            pb={{ base: "20px", lg: "4px" }}
+            mb={{ base: "0", lg: "-4px" }}
+            pt={{ base: "20px", lg: "0" }}
             fontSize="20px"
-            mb="-4px"
+            w={{ base: "100vw", lg: "auto" }}
+            textAlign="center"
             _hover={{
               borderBottom: "2px solid white",
-              transition: "0.3s ease",
             }}
+            transition={{ base: "0s", lg: "0.3s ease" }}
           >
             Categories
           </Text>
         </Link>
-        <Link to="/listings">
+        <Link to="/listings" onClick={closeNav}>
           <Text
             borderBottom="2px solid transparent"
-            pb="4px"
+            pb={{ base: "20px", lg: "0" }}
+            mb={{ base: "0", lg: "-4px" }}
+            pt={{ base: "20px", lg: "0" }}
             fontSize="20px"
-            mb="-4px"
+            w={{ base: "100vw", lg: "auto" }}
+            textAlign="center"
             _hover={{
               borderBottom: "2px solid white",
-              transition: "0.3s ease",
             }}
+            transition={{ base: "0s", lg: "0.3s ease" }}
           >
             Listings
           </Text>
         </Link>
-        <Link to="/sell">
+        <Link to="/sell" onClick={closeNav}>
           <Text
             borderBottom="2px solid transparent"
-            pb="4px"
+            pb={{ base: "20px", lg: "0" }}
+            mb={{ base: "0", lg: "-4px" }}
+            pt={{ base: "20px", lg: "0" }}
             fontSize="20px"
-            mb="-4px"
+            w={{ base: "100vw", lg: "auto" }}
+            textAlign="center"
             _hover={{
               borderBottom: "2px solid white",
-              transition: "0.3s ease",
             }}
+            transition={{ base: "0s", lg: "0.3s ease" }}
           >
             Sell an Item
           </Text>
         </Link>
-      </HStack>
-
-      {/* toggle */}
-      <Box display={{ base: "block", md: "block" }} onClick={toggle}>
-        {isOpen ? <CloseIcon /> : <HamburgerIcon />}
-      </Box>
+      </Stack>
 
       {/* icons */}
-      <Flex position="absolute" right="20px">
+      <Flex
+        position="absolute"
+        right="20px"
+        // display={{ base: "none", lg: "block" }}
+      >
         <ColorModeSwitcher />
         <Link to="/cart">
           <IconButton
@@ -145,6 +159,29 @@ export const Navbar = () => {
             }}
           />
         </Link>
+        {/* toggle nav */}
+        <Box display={{ base: "block", lg: "none" }} onClick={toggleNav}>
+          <IconButton
+            bg="#00539f"
+            border="1px solid #00539f"
+            borderRadius="50%"
+            ml="5px"
+            h="50px"
+            w="50px"
+            aria-label="Cart"
+            icon={
+              isOpen ? (
+                <CloseIcon fontSize="17px" color="white" />
+              ) : (
+                <HamburgerIcon fontSize="24px" color="white" />
+              )
+            }
+            _hover={{
+              border: "1px solid white",
+              transition: "0.3s ease",
+            }}
+          />
+        </Box>
       </Flex>
     </HStack>
   );
