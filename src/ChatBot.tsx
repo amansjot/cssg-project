@@ -18,7 +18,7 @@ export const ChatBot = () => {
         borderRadius="30px"
         border="1px solid white"
         _hover={{
-          backgroundColor: "blue.600",
+          backgroundColor: "blue.500",
           transition: "0.3s ease",
         }}
       >

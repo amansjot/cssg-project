@@ -49,11 +49,11 @@ export const Navbar = () => {
       {/* links */}
       <Stack
         fontWeight="bold"
-        gap={["0", "0", "70px", "70px"]}
+        gap={{ base: "0", lg: "70px" }}
         mt={{ base: "300px", lg: "0" }}
         align="center"
-        justify={["center", "center", "center", "center"]}
-        direction={["column", "column", "row", "row"]}
+        justify="center"
+        direction={{ base: "column", lg: "row"}}
         width="full"
         visibility={{ base: isOpen ? "visible" : "hidden", lg: "visible" }}
         position={{ base: "absolute", lg: "static" }}

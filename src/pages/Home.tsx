@@ -1,48 +1,26 @@
-import { useState } from "react";
 import {
   useColorModeValue,
   Heading,
   Image,
   HStack,
   Container,
-  Input,
-  IconButton,
   Text,
   Button,
-  ButtonGroup,
-  Card,
-  CardBody,
-  CardFooter,
   Center,
-  Divider,
   Stack,
   Box,
   Wrap,
+  Flex,
 } from "@chakra-ui/react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Search2Icon } from "@chakra-ui/icons";
-import config from '../config';
+import config from "../config";
+import { SearchBar } from "../SearchBar";
+import { ShowListings } from "./Listings";
 
 const Home = () => {
-  const [searchQuery, setSearchQuery] = useState<string>("");
-  const navigate = useNavigate();
-
-  const handleSearchQueryChange = (
-    event: React.ChangeEvent<HTMLInputElement>
-  ) => {
-    setSearchQuery(event.target.value);
-  };
-
-  function handleSearch() {
-    navigate("/listings?q=" + searchQuery);
-  }
-
   const mainbg = useColorModeValue("white", "gray.800");
-  const inputbg = useColorModeValue("white", "gray.750");
   const greybg = useColorModeValue("gray.300", "gray.700");
-  const listingbg = useColorModeValue("blue.50", "blue.800");
-  const listingtxt = useColorModeValue("black", "white");
-  const listingborder = useColorModeValue("blue.600", "blue.900");
   const linkcolor = useColorModeValue("blue.500", "blue.300");
 
   return (
@@ -51,6 +29,7 @@ const Home = () => {
         maxW="100%"
         textAlign="center"
         padding="25px"
+        px="3"
         backgroundColor={mainbg}
       >
         <Container maxW="100%" mb="10">
@@ -69,45 +48,11 @@ const Home = () => {
           </Heading>
         </Container>
 
-        <Container maxW="100%">
-          <HStack w="100%" maxW="600px" margin="0 auto" spacing="0">
-            <Input
-              size="lg"
-              name="search"
-              height="60px"
-              borderColor="brand.blue"
-              borderWidth="2px"
-              fontSize="20px"
-              borderRadius="7px 0 0 7px"
-              backgroundColor={inputbg}
-              placeholder="What would you like to find?"
-              onChange={handleSearchQueryChange}
-              _hover={{
-                borderColor: "brand.blue",
-                transition: "0.3s ease",
-              }}
-            />
-            <IconButton
-              borderRadius="0 7px 7px 0"
-              backgroundColor="brand.blue"
-              color="white"
-              border="2px solid brand.blue"
-              ml="-1px"
-              h="60px"
-              w="60px"
-              aria-label="Search catalog"
-              onClick={() => handleSearch()}
-              icon={<Search2Icon fontSize="22px" />}
-              _hover={{
-                bg: "brand.blue",
-                color: "brand.yellow",
-                transition: "0.3s ease",
-              }}
-            />
-          </HStack>
+        <Container maxW="100%" px="0">
+          <SearchBar />
           <HStack
             w="100%"
-            maxW="400px"
+            maxW="380px"
             color={linkcolor}
             margin="12px auto 0 auto"
           >
@@ -123,8 +68,8 @@ const Home = () => {
             </Text>{" "}
             <Text margin="0 auto">
               {" "}
-              <Link to="/listings?q=mirrors">
-                <Search2Icon fontSize="12px" mt="-1" /> mirrors
+              <Link to="/listings?q=guitars">
+                <Search2Icon fontSize="12px" mt="-1" /> guitars
               </Link>
             </Text>
           </HStack>
@@ -141,7 +86,7 @@ const Home = () => {
             <Link to="/categories">All ♾️</Link>
           </Button>
           <Button p="30px" m="8px auto" fontSize="inherit">
-            <Link to="/categories?c=school">School 📚</Link>
+            <Link to="/categories?c=education">Education 📚</Link>
           </Button>
           <Button p="30px" m="8px auto" fontSize="inherit">
             <Link to="/categories?c=furniture">Furniture 🛌</Link>
@@ -169,48 +114,14 @@ const Home = () => {
           <Heading size="xl">Recent Listings</Heading>
         </Center>
         <br />
-        <Center>
-          <Card
-            maxW="sm"
-            bg={listingbg}
-            color={listingtxt}
-            borderWidth="1px"
-            borderStyle="solid"
-            borderColor={listingborder}
-            m="10px"
-          >
-            <CardBody>
-              <Image
-                src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-                alt="Green double couch with wooden legs"
-                borderRadius="lg"
-              />
-              <Stack mt="6" spacing="3">
-                <Heading size="md">Living room Chair</Heading>
-                <Text fontSize="16px">FREE SHIPPING</Text>
-                <Text>
-                  This sofa is perfect for modern tropical spaces, baroque
-                  inspired spaces, earthy toned spaces and for people who love a
-                  chic design with a sprinkle of vintage design.
-                </Text>
-                <Text color="green.600" fontSize="2xl">
-                  $5
-                </Text>
-              </Stack>
-            </CardBody>
-            <Divider />
-            <CardFooter>
-              <ButtonGroup spacing="2">
-                <Button variant="solid" borderColor="brand.blue" backgroundColor="brand.blue" color="white">
-                  Buy now
-                </Button>
-                <Button variant="ghost" colorScheme="blue">
-                  Add to cart
-                </Button>
-              </ButtonGroup>
-            </CardFooter>
-          </Card>
-        </Center>
+        <Flex wrap="wrap" justifyContent="center">
+          {ShowListings("", 3)}
+        </Flex>
+        <Button colorScheme="gray" w="200px" m="20px auto" p="25px">
+          <Link to="/listings">
+            <a href="/">View All Listings</a>
+          </Link>
+        </Button>
       </Stack>
     </div>
   );

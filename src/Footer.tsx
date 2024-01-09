@@ -30,7 +30,7 @@ export const Footer = () => {
           title="UD CSSG Instagram"
           _hover={{
             color: "#c1558b",
-            transition: "0.4s ease-in-out",
+            transition: "0.2s ease-in-out",
           }}
         >
           <FontAwesomeIcon icon={faInstagram} />
@@ -42,7 +42,7 @@ export const Footer = () => {
           title="UD CSSG Discord"
           _hover={{
             color: "#7289da",
-            transition: "0.4s ease-in-out",
+            transition: "0.2s ease-in-out",
           }}
         >
           <FontAwesomeIcon icon={faDiscord} />
