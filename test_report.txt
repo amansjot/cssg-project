@@ -3,6 +3,200 @@
 > react-scripts test --coverage
 
   console.error
+    Warning: Each child in a list should have a unique "key" prop.
+    
+    Check the render method of `Home`. See https://reactjs.org/link/warning-keys for more information.
+        at ListItem2 (/home/runner/work/cssg-project/cssg-project/node_modules/@chakra-ui/layout/src/list.tsx:124:18)
+        at Home (/home/runner/work/cssg-project/cssg-project/src/pages/Home.tsx:22:35)
+        at RenderedRoute (/home/runner/work/cssg-project/cssg-project/node_modules/react-router/lib/hooks.tsx:640:26)
+        at Routes (/home/runner/work/cssg-project/cssg-project/node_modules/react-router/lib/components.tsx:504:3)
+        at Router (/home/runner/work/cssg-project/cssg-project/node_modules/react-router/lib/components.tsx:413:13)
+        at BrowserRouter (/home/runner/work/cssg-project/cssg-project/node_modules/react-router-dom/index.tsx:738:3)
+        at App
+        at EnvironmentProvider (/home/runner/work/cssg-project/cssg-project/node_modules/@chakra-ui/react-env/src/env.tsx:38:11)
+        at ColorModeProvider (/home/runner/work/cssg-project/cssg-project/node_modules/@chakra-ui/color-mode/src/color-mode-provider.tsx:33:5)
+        at ThemeProvider (/home/runner/work/cssg-project/cssg-project/node_modules/@emotion/react/dist/emotion-element-48d2c2e4.cjs.dev.js:125:32)
+        at ThemeProvider (/home/runner/work/cssg-project/cssg-project/node_modules/@chakra-ui/system/src/providers.tsx:17:17)
+        at ChakraProvider (/home/runner/work/cssg-project/cssg-project/node_modules/@chakra-ui/provider/src/chakra-provider.tsx:77:5)
+        at ChakraProvider2 (/home/runner/work/cssg-project/cssg-project/node_modules/@chakra-ui/react/src/chakra-provider.tsx:23:3)
+        at AllProviders (/home/runner/work/cssg-project/cssg-project/src/test-utils.tsx:5:25)
+
+      113 |               </Text>
+      114 |               <Text>
+    > 115 |                 <UnorderedList>
+          |                 ^
+      116 |                   {listing.description.map((item: string): JSX.Element => {
+      117 |                     return <ListItem>{item}</ListItem>;
+      118 |                   })}
+
+      at printWarning (node_modules/react/cjs/react-jsx-dev-runtime.development.js:87:30)
+      at error (node_modules/react/cjs/react-jsx-dev-runtime.development.js:61:7)
+      at validateExplicitKey (node_modules/react/cjs/react-jsx-dev-runtime.development.js:1078:5)
+      at validateChildKeys (node_modules/react/cjs/react-jsx-dev-runtime.development.js:1105:11)
+      at jsxWithValidation (node_modules/react/cjs/react-jsx-dev-runtime.development.js:1276:11)
+      at map (src/pages/Listings.tsx:115:17)
+          at Array.map (<anonymous>)
+      at ShowListings (src/pages/Listings.tsx:88:24)
+      at Home (src/pages/Home.tsx:118:24)
+      at renderWithHooks (node_modules/react-dom/cjs/react-dom.development.js:16305:18)
+      at mountIndeterminateComponent (node_modules/react-dom/cjs/react-dom.development.js:20074:13)
+      at beginWork (node_modules/react-dom/cjs/react-dom.development.js:21587:16)
+      at beginWork$1 (node_modules/react-dom/cjs/react-dom.development.js:27426:14)
+      at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:26560:12)
+      at workLoopSync (node_modules/react-dom/cjs/react-dom.development.js:26466:5)
+      at renderRootSync (node_modules/react-dom/cjs/react-dom.development.js:26434:7)
+      at performConcurrentWorkOnRoot (node_modules/react-dom/cjs/react-dom.development.js:25738:74)
+      at flushActQueue (node_modules/react/cjs/react.development.js:2667:24)
+      at act (node_modules/react/cjs/react.development.js:2582:11)
+      at node_modules/@testing-library/react/dist/act-compat.js:46:25
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:161:26)
+      at render (node_modules/@testing-library/react/dist/pure.js:247:10)
+      at customRender (src/test-utils.tsx:10:9)
+      at Object.<anonymous> (src/App.test.tsx:7:9)
+      at TestScheduler.scheduleTests (node_modules/react-scripts/node_modules/@jest/core/build/TestScheduler.js:333:13)
+      at runJest (node_modules/react-scripts/node_modules/@jest/core/build/runJest.js:404:19)
+      at _run10000 (node_modules/react-scripts/node_modules/@jest/core/build/cli/index.js:320:7)
+      at runCLI (node_modules/react-scripts/node_modules/@jest/core/build/cli/index.js:173:3)
+
+  console.error
+    Warning: validateDOMNesting(...): <ul> cannot appear as a descendant of <p>.
+        at ul
+        at /home/runner/work/cssg-project/cssg-project/node_modules/@emotion/react/dist/emotion-element-48d2c2e4.cjs.dev.js:62:23
+        at ChakraComponent (/home/runner/work/cssg-project/cssg-project/node_modules/@chakra-ui/system/src/system.ts:88:53)
+        at List2 (/home/runner/work/cssg-project/cssg-project/node_modules/@chakra-ui/layout/src/list.tsx:55:18)
+        at UnorderedList2 (/home/runner/work/cssg-project/cssg-project/node_modules/@chakra-ui/layout/src/list.tsx:105:11)
+        at p
+        at /home/runner/work/cssg-project/cssg-project/node_modules/@emotion/react/dist/emotion-element-48d2c2e4.cjs.dev.js:62:23
+        at ChakraComponent (/home/runner/work/cssg-project/cssg-project/node_modules/@chakra-ui/system/src/system.ts:88:53)
+        at Text2 (/home/runner/work/cssg-project/cssg-project/node_modules/@chakra-ui/layout/src/text.tsx:37:18)
+        at div
+        at /home/runner/work/cssg-project/cssg-project/node_modules/@emotion/react/dist/emotion-element-48d2c2e4.cjs.dev.js:62:23
+        at ChakraComponent (/home/runner/work/cssg-project/cssg-project/node_modules/@chakra-ui/system/src/system.ts:88:53)
+        at /home/runner/work/cssg-project/cssg-project/node_modules/@chakra-ui/layout/src/stack/stack.tsx:81:5
+        at div
+        at /home/runner/work/cssg-project/cssg-project/node_modules/@emotion/react/dist/emotion-element-48d2c2e4.cjs.dev.js:62:23
+        at ChakraComponent (/home/runner/work/cssg-project/cssg-project/node_modules/@chakra-ui/system/src/system.ts:88:53)
+        at CardBody2 (/home/runner/work/cssg-project/cssg-project/node_modules/@chakra-ui/card/src/card-body.tsx:11:11)
+        at div
+        at /home/runner/work/cssg-project/cssg-project/node_modules/@emotion/react/dist/emotion-element-48d2c2e4.cjs.dev.js:62:23
+        at ChakraComponent (/home/runner/work/cssg-project/cssg-project/node_modules/@chakra-ui/system/src/system.ts:88:53)
+        at Card2 (/home/runner/work/cssg-project/cssg-project/node_modules/@chakra-ui/card/src/card.tsx:43:18)
+        at div
+        at /home/runner/work/cssg-project/cssg-project/node_modules/@emotion/react/dist/emotion-element-48d2c2e4.cjs.dev.js:62:23
+        at ChakraComponent (/home/runner/work/cssg-project/cssg-project/node_modules/@chakra-ui/system/src/system.ts:88:53)
+        at div
+        at /home/runner/work/cssg-project/cssg-project/node_modules/@emotion/react/dist/emotion-element-48d2c2e4.cjs.dev.js:62:23
+        at ChakraComponent (/home/runner/work/cssg-project/cssg-project/node_modules/@chakra-ui/system/src/system.ts:88:53)
+        at Flex2 (/home/runner/work/cssg-project/cssg-project/node_modules/@chakra-ui/layout/src/flex.tsx:64:11)
+        at div
+        at /home/runner/work/cssg-project/cssg-project/node_modules/@emotion/react/dist/emotion-element-48d2c2e4.cjs.dev.js:62:23
+        at ChakraComponent (/home/runner/work/cssg-project/cssg-project/node_modules/@chakra-ui/system/src/system.ts:88:53)
+        at /home/runner/work/cssg-project/cssg-project/node_modules/@chakra-ui/layout/src/stack/stack.tsx:81:5
+        at div
+        at Home (/home/runner/work/cssg-project/cssg-project/src/pages/Home.tsx:22:35)
+        at RenderedRoute (/home/runner/work/cssg-project/cssg-project/node_modules/react-router/lib/hooks.tsx:640:26)
+        at Routes (/home/runner/work/cssg-project/cssg-project/node_modules/react-router/lib/components.tsx:504:3)
+        at Router (/home/runner/work/cssg-project/cssg-project/node_modules/react-router/lib/components.tsx:413:13)
+        at BrowserRouter (/home/runner/work/cssg-project/cssg-project/node_modules/react-router-dom/index.tsx:738:3)
+        at App
+        at EnvironmentProvider (/home/runner/work/cssg-project/cssg-project/node_modules/@chakra-ui/react-env/src/env.tsx:38:11)
+        at ColorModeProvider (/home/runner/work/cssg-project/cssg-project/node_modules/@chakra-ui/color-mode/src/color-mode-provider.tsx:33:5)
+        at ThemeProvider (/home/runner/work/cssg-project/cssg-project/node_modules/@emotion/react/dist/emotion-element-48d2c2e4.cjs.dev.js:125:32)
+        at ThemeProvider (/home/runner/work/cssg-project/cssg-project/node_modules/@chakra-ui/system/src/providers.tsx:17:17)
+        at ChakraProvider (/home/runner/work/cssg-project/cssg-project/node_modules/@chakra-ui/provider/src/chakra-provider.tsx:77:5)
+        at ChakraProvider2 (/home/runner/work/cssg-project/cssg-project/node_modules/@chakra-ui/react/src/chakra-provider.tsx:23:3)
+        at AllProviders (/home/runner/work/cssg-project/cssg-project/src/test-utils.tsx:5:25)
+
+       8 |
+       9 | const customRender = (ui: React.ReactElement, options?: RenderOptions) =>
+    > 10 |   render(ui, { wrapper: AllProviders, ...options })
+         |         ^
+      11 |
+      12 | export { customRender as render }
+      13 |
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at validateDOMNesting (node_modules/react-dom/cjs/react-dom.development.js:10849:7)
+      at createInstance (node_modules/react-dom/cjs/react-dom.development.js:10930:5)
+      at completeWork (node_modules/react-dom/cjs/react-dom.development.js:22187:28)
+      at completeUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:26593:16)
+      at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:26568:5)
+      at workLoopSync (node_modules/react-dom/cjs/react-dom.development.js:26466:5)
+      at renderRootSync (node_modules/react-dom/cjs/react-dom.development.js:26434:7)
+      at performConcurrentWorkOnRoot (node_modules/react-dom/cjs/react-dom.development.js:25738:74)
+      at flushActQueue (node_modules/react/cjs/react.development.js:2667:24)
+      at act (node_modules/react/cjs/react.development.js:2582:11)
+      at node_modules/@testing-library/react/dist/act-compat.js:46:25
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:161:26)
+      at render (node_modules/@testing-library/react/dist/pure.js:247:10)
+      at customRender (src/test-utils.tsx:10:9)
+      at Object.<anonymous> (src/App.test.tsx:7:9)
+      at TestScheduler.scheduleTests (node_modules/react-scripts/node_modules/@jest/core/build/TestScheduler.js:333:13)
+      at runJest (node_modules/react-scripts/node_modules/@jest/core/build/runJest.js:404:19)
+      at _run10000 (node_modules/react-scripts/node_modules/@jest/core/build/cli/index.js:320:7)
+      at runCLI (node_modules/react-scripts/node_modules/@jest/core/build/cli/index.js:173:3)
+
+  console.error
+    Warning: validateDOMNesting(...): <a> cannot appear as a descendant of <a>.
+        at a
+        at a
+        at LinkWithRef (/home/runner/work/cssg-project/cssg-project/node_modules/react-router-dom/index.tsx:905:7)
+        at ButtonContent (/home/runner/work/cssg-project/cssg-project/node_modules/@chakra-ui/button/src/button.tsx:135:11)
+        at button
+        at /home/runner/work/cssg-project/cssg-project/node_modules/@emotion/react/dist/emotion-element-48d2c2e4.cjs.dev.js:62:23
+        at ChakraComponent (/home/runner/work/cssg-project/cssg-project/node_modules/@chakra-ui/system/src/system.ts:88:53)
+        at /home/runner/work/cssg-project/cssg-project/node_modules/@chakra-ui/button/src/button.tsx:32:17
+        at div
+        at /home/runner/work/cssg-project/cssg-project/node_modules/@emotion/react/dist/emotion-element-48d2c2e4.cjs.dev.js:62:23
+        at ChakraComponent (/home/runner/work/cssg-project/cssg-project/node_modules/@chakra-ui/system/src/system.ts:88:53)
+        at /home/runner/work/cssg-project/cssg-project/node_modules/@chakra-ui/layout/src/stack/stack.tsx:81:5
+        at div
+        at Home (/home/runner/work/cssg-project/cssg-project/src/pages/Home.tsx:22:35)
+        at RenderedRoute (/home/runner/work/cssg-project/cssg-project/node_modules/react-router/lib/hooks.tsx:640:26)
+        at Routes (/home/runner/work/cssg-project/cssg-project/node_modules/react-router/lib/components.tsx:504:3)
+        at Router (/home/runner/work/cssg-project/cssg-project/node_modules/react-router/lib/components.tsx:413:13)
+        at BrowserRouter (/home/runner/work/cssg-project/cssg-project/node_modules/react-router-dom/index.tsx:738:3)
+        at App
+        at EnvironmentProvider (/home/runner/work/cssg-project/cssg-project/node_modules/@chakra-ui/react-env/src/env.tsx:38:11)
+        at ColorModeProvider (/home/runner/work/cssg-project/cssg-project/node_modules/@chakra-ui/color-mode/src/color-mode-provider.tsx:33:5)
+        at ThemeProvider (/home/runner/work/cssg-project/cssg-project/node_modules/@emotion/react/dist/emotion-element-48d2c2e4.cjs.dev.js:125:32)
+        at ThemeProvider (/home/runner/work/cssg-project/cssg-project/node_modules/@chakra-ui/system/src/providers.tsx:17:17)
+        at ChakraProvider (/home/runner/work/cssg-project/cssg-project/node_modules/@chakra-ui/provider/src/chakra-provider.tsx:77:5)
+        at ChakraProvider2 (/home/runner/work/cssg-project/cssg-project/node_modules/@chakra-ui/react/src/chakra-provider.tsx:23:3)
+        at AllProviders (/home/runner/work/cssg-project/cssg-project/src/test-utils.tsx:5:25)
+
+       8 |
+       9 | const customRender = (ui: React.ReactElement, options?: RenderOptions) =>
+    > 10 |   render(ui, { wrapper: AllProviders, ...options })
+         |         ^
+      11 |
+      12 | export { customRender as render }
+      13 |
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at validateDOMNesting (node_modules/react-dom/cjs/react-dom.development.js:10849:7)
+      at createInstance (node_modules/react-dom/cjs/react-dom.development.js:10930:5)
+      at completeWork (node_modules/react-dom/cjs/react-dom.development.js:22187:28)
+      at completeUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:26593:16)
+      at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:26568:5)
+      at workLoopSync (node_modules/react-dom/cjs/react-dom.development.js:26466:5)
+      at renderRootSync (node_modules/react-dom/cjs/react-dom.development.js:26434:7)
+      at performConcurrentWorkOnRoot (node_modules/react-dom/cjs/react-dom.development.js:25738:74)
+      at flushActQueue (node_modules/react/cjs/react.development.js:2667:24)
+      at act (node_modules/react/cjs/react.development.js:2582:11)
+      at node_modules/@testing-library/react/dist/act-compat.js:46:25
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:161:26)
+      at render (node_modules/@testing-library/react/dist/pure.js:247:10)
+      at customRender (src/test-utils.tsx:10:9)
+      at Object.<anonymous> (src/App.test.tsx:7:9)
+      at TestScheduler.scheduleTests (node_modules/react-scripts/node_modules/@jest/core/build/TestScheduler.js:333:13)
+      at runJest (node_modules/react-scripts/node_modules/@jest/core/build/runJest.js:404:19)
+      at _run10000 (node_modules/react-scripts/node_modules/@jest/core/build/cli/index.js:320:7)
+      at runCLI (node_modules/react-scripts/node_modules/@jest/core/build/cli/index.js:173:3)
+
+  console.error
     Error: Not implemented: window.scrollTo
         at module.exports (/home/runner/work/cssg-project/cssg-project/node_modules/jsdom/lib/jsdom/browser/not-implemented.js:9:17)
         at scrollTo (/home/runner/work/cssg-project/cssg-project/node_modules/jsdom/lib/jsdom/browser/Window.js:866:7)
@@ -84,7 +278,7 @@
       at runCLI (node_modules/react-scripts/node_modules/@jest/core/build/cli/index.js:173:3)
 
 FAIL src/App.test.tsx
-  ✕ renders learn react link (347 ms)
+  ✕ renders learn react link (506 ms)
 
   ● renders learn react link
 
@@ -121,7 +315,7 @@ FAIL src/App.test.tsx
             [36m</a>[39m
           [36m</div>[39m
           [36m<div[39m
-            [33mclass[39m=[32m"chakra-stack css-5r0l9v"[39m
+            [33mclass[39m=[32m"chakra-stack css-17v980v"[39m
           [36m>[39m
             [36m<a[39m
               [33mhref[39m=[32m"/categories"[39m
@@ -249,7 +443,7 @@ FAIL src/App.test.tsx
                     [33mfill[39m=[32m"currentColor"[39m
                   [36m/>[39m
                 [36m</svg>[39m
-              ...
+              ...
 
        6 | test("renders learn react link", () => {
        7 |   render(<App />)
@@ -269,33 +463,35 @@ FAIL src/App.test.tsx
       at _run10000 (node_modules/react-scripts/node_modules/@jest/core/build/cli/index.js:320:7)
       at runCLI (node_modules/react-scripts/node_modules/@jest/core/build/cli/index.js:173:3)
 
-------------------------|---------|----------|---------|---------|-------------------
-File                    | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
-------------------------|---------|----------|---------|---------|-------------------
-All files               |    34.1 |     5.76 |   25.64 |    35.2 |                   
- src                    |      30 |     6.52 |      30 |   31.03 |                   
-  App.tsx               |     100 |       50 |     100 |     100 | 25                
-  ChatBot.tsx           |     100 |      100 |     100 |     100 |                   
-  ColorModeSwitcher.tsx |     100 |      100 |     100 |     100 |                   
-  Footer.tsx            |     100 |      100 |     100 |     100 |                   
-  Logo.tsx              |       0 |        0 |       0 |       0 | 11-23             
-  Navbar.tsx            |   71.42 |       50 |   33.33 |     100 | 58-173            
-  config.js             |     100 |      100 |     100 |     100 |                   
-  index.tsx             |       0 |        0 |     100 |       0 | 9-30              
-  reportWebVitals.ts    |       0 |        0 |       0 |       0 | 3-10              
-  serviceWorker.ts      |       0 |        0 |       0 |       0 | 13-143            
-  test-utils.tsx        |     100 |      100 |     100 |     100 |                   
-  theme.ts              |       0 |      100 |     100 |       0 | 5-11              
- src/pages              |   43.58 |        0 |   11.11 |   44.73 |                   
-  Account.tsx           |   33.33 |      100 |       0 |   33.33 | 9-11              
-  Cart.tsx              |   33.33 |      100 |       0 |   33.33 | 9-11              
-  Categories.tsx        |   14.28 |        0 |       0 |   16.66 | 10-16             
-  Home.tsx              |      80 |      100 |      25 |      80 | 33-37,99          
-  Listings.tsx          |    12.5 |        0 |       0 |    12.5 | 19-27             
-  Sell.tsx              |   33.33 |      100 |       0 |   33.33 | 9-11              
-------------------------|---------|----------|---------|---------|-------------------
+------------------------|---------|----------|---------|---------|-------------------------------
+File                    | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s             
+------------------------|---------|----------|---------|---------|-------------------------------
+All files               |   45.88 |    13.88 |      34 |   47.27 |                               
+ src                    |   34.95 |     6.25 |   29.41 |      36 |                               
+  App.tsx               |     100 |       50 |     100 |     100 | 25                            
+  ChatBot.tsx           |     100 |      100 |     100 |     100 |                               
+  ColorModeSwitcher.tsx |     100 |      100 |     100 |     100 |                               
+  Footer.tsx            |     100 |      100 |     100 |     100 |                               
+  Listings.ts           |     100 |      100 |     100 |     100 |                               
+  Logo.tsx              |       0 |        0 |       0 |       0 | 11-23                         
+  Navbar.tsx            |   71.42 |       50 |   33.33 |     100 | 58-173                        
+  SearchBar.tsx         |   66.66 |        0 |      25 |   66.66 | 14,18,22-23                   
+  config.js             |     100 |      100 |     100 |     100 |                               
+  index.tsx             |       0 |        0 |     100 |       0 | 9-30                          
+  reportWebVitals.ts    |       0 |        0 |       0 |       0 | 3-10                          
+  serviceWorker.ts      |       0 |        0 |       0 |       0 | 13-143                        
+  test-utils.tsx        |     100 |      100 |     100 |     100 |                               
+  theme.ts              |       0 |      100 |     100 |       0 | 5-11                          
+ src/pages              |   62.68 |    29.16 |   43.75 |   64.61 |                               
+  Account.tsx           |   33.33 |      100 |       0 |   33.33 | 9-11                          
+  Cart.tsx              |   33.33 |      100 |       0 |   33.33 | 9-11                          
+  Categories.tsx        |   14.28 |        0 |       0 |   16.66 | 10-16                         
+  Home.tsx              |     100 |      100 |     100 |     100 |                               
+  Listings.tsx          |   71.73 |       35 |   54.54 |   73.33 | 43,46-49,64,71-72,142,156-160 
+  Sell.tsx              |   33.33 |      100 |       0 |   33.33 | 9-11                          
+------------------------|---------|----------|---------|---------|-------------------------------
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        3.494 s
+Time:        3.768 s
 Ran all test suites.
