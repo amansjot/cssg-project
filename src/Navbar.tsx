@@ -1,4 +1,3 @@
-import * as React from "react";
 import { Link } from "react-router-dom";
 import {
   Flex,
@@ -9,6 +8,7 @@ import {
   Text,
   Box,
   Stack,
+  useBoolean,
 } from "@chakra-ui/react";
 import { faCartShopping, faUser } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -17,9 +17,7 @@ import { ColorModeSwitcher } from "./ColorModeSwitcher";
 import config from "./config";
 
 export const Navbar = () => {
-  const [isOpen, setIsOpen] = React.useState(false);
-  const toggleNav = () => setIsOpen(!isOpen);
-  const closeNav = () => setIsOpen(false);
+  const [isOpen, setIsOpen] = useBoolean();
 
   return (
     <HStack
@@ -36,7 +34,7 @@ export const Navbar = () => {
     >
       {/* logo */}
       <HStack position="absolute" left="30px">
-        <Link to="/" onClick={closeNav}>
+        <Link to="/" onClick={setIsOpen.toggle}>
           <Image src={config.logo} w="50px" alt="CS+SG logo" mr="2" />
         </Link>
         <Link to="/">
@@ -59,7 +57,7 @@ export const Navbar = () => {
         position={{ base: "absolute", lg: "static" }}
         bg="brand.blue"
       >
-        <Link to="/categories" onClick={closeNav}>
+        {/* <Link to="/categories" onClick={setIsOpen.off}>
           <Text
             borderBottom="2px solid transparent"
             pb={{ base: "20px", lg: "4px" }}
@@ -75,8 +73,8 @@ export const Navbar = () => {
           >
             Categories
           </Text>
-        </Link>
-        <Link to="/listings" onClick={closeNav}>
+        </Link> */}
+        <Link to="/listings" onClick={setIsOpen.off}>
           <Text
             borderBottom="2px solid transparent"
             pb={{ base: "20px", lg: "4px" }}
@@ -90,10 +88,10 @@ export const Navbar = () => {
             }}
             transition={{ base: "0s", lg: "0.3s ease" }}
           >
-            Listings
+            View Listings
           </Text>
         </Link>
-        <Link to="/sell" onClick={closeNav}>
+        <Link to="/sell" onClick={setIsOpen.off}>
           <Text
             borderBottom="2px solid transparent"
             pb={{ base: "20px", lg: "4px" }}
@@ -160,7 +158,7 @@ export const Navbar = () => {
           />
         </Link>
         {/* toggle nav */}
-        <Box display={{ base: "block", lg: "none" }} onClick={toggleNav}>
+        <Box display={{ base: "block", lg: "none" }} onClick={setIsOpen.toggle}>
           <IconButton
             bg="#00539f"
             border="1px solid #00539f"
