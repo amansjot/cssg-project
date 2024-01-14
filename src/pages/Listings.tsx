@@ -22,7 +22,7 @@ import { useSearchParams } from "react-router-dom";
 import { listings } from "../Listings";
 import { SearchBar } from "../SearchBar";
 
-export const ShowListings = (query: string = "", numListings: number | "all" = "all") => {
+export const ShowListings = (query: string = "", category: string = "", numListings: number | null = null) => {
   const listingbg: string = useColorModeValue("blue.50", "blue.800");
   const listingtxt: string = useColorModeValue("black", "white");
   const listingborder: string = useColorModeValue("blue.600", "blue.900");
@@ -68,9 +68,17 @@ export const ShowListings = (query: string = "", numListings: number | "all" = "
 
   /* filter by search query */
   if (query) {
-    listingsArray = listings.filter((listing) => {
+    listingsArray = listingsArray.filter((listing) => {
       return listing.keywords.some((keyword) => query.startsWith(keyword));
     });
+  }
+
+  /* filter by category */
+  if (category) {
+    listingsArray = listingsArray.filter((listing) => {
+      return listing.category === category;
+    });
+    // alert(listingsArray[0].category);
   }
 
   /* sort by date - recent */ 
@@ -81,7 +89,7 @@ export const ShowListings = (query: string = "", numListings: number | "all" = "
   });
 
   /* truncate listings for homepage */
-  if (numListings !== "all") {
+  if (numListings) {
     listingsArray = listingsArray.slice(0, numListings);
   }
 
@@ -156,6 +164,7 @@ const Listings = () => {
   const mainbg: string = useColorModeValue("white", "gray.800");
   const [searchParams] = useSearchParams();
   const query: string = searchParams.get("q") || "";
+  const category: string = searchParams.get("c") || "";
 
   return (
     <div>
@@ -164,13 +173,14 @@ const Listings = () => {
           {" "}
           <Heading size="xl">
             {query ? `Listings for "${query}"` : "All Listings"}
+            {category ? ` in ${category.charAt(0).toUpperCase() + category.slice(1)}` : ""}
           </Heading>
         </Center>
         <br />
-        <SearchBar value={query} />
+        <SearchBar query={query} category={category} />
         <br />
         <Flex wrap="wrap" justifyContent="center">
-          {ShowListings(query, "all")}
+          {ShowListings(query, category)}
         </Flex>
       </Stack>
     </div>

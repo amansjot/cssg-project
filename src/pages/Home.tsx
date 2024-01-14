@@ -17,6 +17,7 @@ import { Search2Icon } from "@chakra-ui/icons";
 import config from "../config";
 import { SearchBar } from "../SearchBar";
 import { ShowListings } from "./Listings";
+import { categories, Category } from "../Categories";
 
 const Home = () => {
   const mainbg = useColorModeValue("white", "gray.800");
@@ -28,8 +29,7 @@ const Home = () => {
       <Container
         maxW="100%"
         textAlign="center"
-        padding="25px"
-        px="3"
+        p="25px 0"
         backgroundColor={mainbg}
       >
         <Container maxW="100%" mb="10">
@@ -49,7 +49,7 @@ const Home = () => {
         </Container>
 
         <Container maxW="100%" px="0">
-          <SearchBar />
+          <SearchBar query="" category="" />
           <HStack
             w="100%"
             maxW="380px"
@@ -82,27 +82,15 @@ const Home = () => {
           <Heading size="xl">Categories</Heading>
         </Center>
         <Wrap m="0 auto" width="900px" maxW="90%" fontSize="3xl" mt="32px">
-          <Button p="30px" m="8px auto" fontSize="inherit">
-            <Link to="/categories">All ♾️</Link>
-          </Button>
-          <Button p="30px" m="8px auto" fontSize="inherit">
-            <Link to="/categories?c=education">Education 📚</Link>
-          </Button>
-          <Button p="30px" m="8px auto" fontSize="inherit">
-            <Link to="/categories?c=furniture">Furniture 🛌</Link>
-          </Button>
-          <Button p="30px" m="8px auto" fontSize="inherit">
-            <Link to="/categories?c=housing">Housing 🏠</Link>
-          </Button>
-          <Button p="30px" m="8px auto" fontSize="inherit">
-            <Link to="/categories?c=transportation">Transportation 🚲</Link>
-          </Button>
-          <Button p="30px" m="8px auto" fontSize="inherit">
-            <Link to="/categories?c=electronics">Electronics 🎮</Link>
-          </Button>
-          <Button p="30px" m="8px auto" fontSize="inherit">
-            <Link to="/categories?c=miscellaneous">Miscellaneous 📸</Link>
-          </Button>
+          {[...categories].map((category: Category): JSX.Element => {
+            return (
+              <Button p="30px" m="8px auto" fontSize="inherit">
+                <Link to={"/listings?q=&c=" + category.value}>
+                  {category.name || "All"} {category.emoji}
+                </Link>
+              </Button>
+            );
+          })}
         </Wrap>
       </Box>
 
@@ -115,13 +103,15 @@ const Home = () => {
         </Center>
         <br />
         <Flex wrap="wrap" justifyContent="center">
-          {ShowListings("", 3)}
+          {ShowListings("", "", 3)}
         </Flex>
-        <Button colorScheme="gray" w="200px" m="20px auto" p="25px">
+        <Center>
           <Link to="/listings">
-            <a href="/">View All Listings</a>
+            <Button colorScheme="gray" mt="20px" p="25px">
+              <a href="/">View All Listings</a>
+            </Button>
           </Link>
-        </Button>
+        </Center>
       </Stack>
     </div>
   );

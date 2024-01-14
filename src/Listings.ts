@@ -1,4 +1,26 @@
-export const listings = [
+export interface Seller {
+  name: string;
+  email: string;
+}
+
+export interface Details {
+  freeDelivery: boolean;
+}
+
+export interface Listing {
+  title: string; 
+  image: string; 
+  date: string; 
+  location: string; 
+  description: string[]; 
+  price: number; 
+  details: Details; 
+  seller: Seller;
+  category: string;
+  keywords: string[]; 
+}
+
+export const listings: Listing[] = [
   {
     title: "Living Room Chair",
     image:
@@ -13,7 +35,7 @@ export const listings = [
       email: "jeffsmith@udel.edu",
     },
     category: "furniture",
-    keywords: ["furniture", "chair", "couch", "sofa", "living room"],
+    keywords: ["chair", "couch", "sofa", "living room"],
   },
   {
     title: "Calculus Textbook",
@@ -28,7 +50,7 @@ export const listings = [
       email: "alicejohnson@udel.edu",
     },
     category: "education",
-    keywords: ["textbook", "book", "school", "calc", "math", "education"],
+    keywords: ["textbook", "book", "school", "calc", "math"],
   },
   {
     title: "Studio Apartment",
@@ -43,7 +65,7 @@ export const listings = [
       email: "brianlee@udel.edu",
     },
     category: "housing",
-    keywords: ["housing", "apartment", "rent", "studio"],
+    keywords: ["apartment", "rent", "studio"],
   },
   {
     title: "Mountain Bike",
@@ -61,7 +83,7 @@ export const listings = [
       email: "cindymorales@udel.edu",
     },
     category: "transportation",
-    keywords: ["bike", "bicycle", "mountain bike", "outdoor", "transport"],
+    keywords: ["bike", "bicycle", "mountain bike", "outdoor"],
   },
   {
     title: "Laptop - Dell XPS 13",
@@ -76,7 +98,7 @@ export const listings = [
       email: "davidkim@udel.edu",
     },
     category: "electronics",
-    keywords: ["electronic", "laptop", "dell", "computer"],
+    keywords: ["laptop", "dell", "computer"],
   },
   {
     title: "Dining Table Set",
@@ -91,6 +113,6 @@ export const listings = [
       email: "emilycarter@udel.edu",
     },
     category: "furniture",
-    keywords: ["furniture", "dining", "table", "chair", "wood"],
+    keywords: ["dining", "table", "chair", "wood"],
   },
 ];
