@@ -18,7 +18,7 @@ import config from "../config";
 import { SearchBar } from "../SearchBar";
 import { ShowListings } from "./Listings";
 import { categories, Category } from "../Categories";
-import Carousel from "../Carousel";
+// import Carousel from "../Carousel";
 
 const Home = () => {
   const mainbg = useColorModeValue("white", "gray.800");
