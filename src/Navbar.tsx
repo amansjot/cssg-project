@@ -19,7 +19,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { ColorModeSwitcher } from "./ColorModeSwitcher";
 import config from "./config";
-import { useState } from "react";
+// import { useState } from "react";
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useBoolean();
