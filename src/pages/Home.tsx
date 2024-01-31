@@ -120,9 +120,9 @@ const Home = () => {
         </Center>
       </Stack>
 
+      {/* <br />
       <br />
-      <br />
-      <Carousel />
+      <Carousel /> */}
     </div>
   );
 };
