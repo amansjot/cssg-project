@@ -23,11 +23,11 @@ import { useState } from "react";
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useBoolean();
-  const [activePage, setActivePage] = useState<string>("/");
+  // const [activePage, setActivePage] = useState<string>("/");
 
   const handleNavigate = (link: string) => {
     setIsOpen.off();
-    setActivePage(link);
+    // setActivePage(link);
   };
 
   return (

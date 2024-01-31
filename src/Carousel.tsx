@@ -1,6 +1,6 @@
 import * as React from "react";
 import { useState } from "react";
-import { Box, Button, Image, Flex, useBreakpointValue } from "@chakra-ui/react";
+import { Box, Button, Image, Flex } from "@chakra-ui/react";
 import { ChevronLeftIcon, ChevronRightIcon } from "@chakra-ui/icons";
 
 const images: string[] = [
