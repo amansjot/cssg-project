@@ -18,10 +18,12 @@ import config from "../config";
 import { SearchBar } from "../SearchBar";
 import { ShowListings } from "./Listings";
 import { categories, Category } from "../Categories";
+import Carousel from "../Carousel";
 
 const Home = () => {
   const mainbg = useColorModeValue("white", "gray.800");
   const greybg = useColorModeValue("gray.300", "gray.700");
+  const greytext = useColorModeValue("gray.600", "gray.300");
   const linkcolor = useColorModeValue("blue.500", "blue.300");
 
   return (
@@ -56,39 +58,43 @@ const Home = () => {
             color={linkcolor}
             margin="12px auto 0 auto"
           >
-            <Text margin="0 auto">
-              <Link to="/listings?q=books">
-                <Search2Icon fontSize="12px" mt="-1" /> books
-              </Link>{" "}
-            </Text>
-            <Text margin="0 auto">
-              <Link to="/listings?q=couches">
-                <Search2Icon fontSize="12px" mt="-1" /> couches
-              </Link>
-            </Text>{" "}
-            <Text margin="0 auto">
-              {" "}
-              <Link to="/listings?q=guitars">
-                <Search2Icon fontSize="12px" mt="-1" /> guitars
-              </Link>
-            </Text>
+            {["leases", "couches", "posters"].map(
+              (item: string): JSX.Element => {
+                return (
+                  <Text margin="0 auto">
+                    <Link to={"/listings?q=" + item}>
+                      <Search2Icon mt="-1" fontSize="13px" /> {item}
+                    </Link>{" "}
+                  </Text>
+                );
+              }
+            )}
           </HStack>
         </Container>
       </Container>
       <br />
 
-      <Box backgroundColor={greybg} p="50px">
+      <Box backgroundColor={greybg} p="50px 30px">
         <Center>
           <Heading size="xl">Categories</Heading>
         </Center>
-        <Wrap m="0 auto" width="900px" maxW="90%" fontSize="3xl" mt="32px">
-          {[...categories].map((category: Category): JSX.Element => {
+        <Wrap m="32px auto 0 auto" width="900px" maxW="90%">
+          {[...categories].map((category: Category) => {
             return (
-              <Button p="30px" m="8px auto" fontSize="inherit">
+              <Box m="8px auto" width={{ base: "100%", sm: "70%", md: "auto" }}>
                 <Link to={"/listings?q=&c=" + category.value}>
-                  {category.name || "All"} {category.emoji}
+                  <Button p="50px 25px" w="100%">
+                    <Stack>
+                      <Text fontSize="3xl">
+                        {category.name || "All"} {category.emoji}
+                      </Text>
+                      <Text fontSize="sm" fontWeight="normal" color={greytext}>
+                        {category.description}
+                      </Text>
+                    </Stack>
+                  </Button>
                 </Link>
-              </Button>
+              </Box>
             );
           })}
         </Wrap>
@@ -113,6 +119,10 @@ const Home = () => {
           </Link>
         </Center>
       </Stack>
+
+      <br />
+      <br />
+      <Carousel />
     </div>
   );
 };
